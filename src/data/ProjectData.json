@@ -1,0 +1,65 @@
+[
+  {
+    "title": "renal site",
+    "description": "Websitenya renal pertama",
+    "technology": "HTML" ,
+    "image": "../projects/porto2.jpg",
+    "link": "https://renmaruu.github.io"
+  },
+  {
+    "title": "web renal2 nyoba react tailwind",
+    "description": "apa aja deh",
+    "technology": "ReactJS",
+    "image": "../projects/porto1.jpg", 
+    "link": "https://renmaruu.github.io"
+  },
+  {
+    "title": "Python Games Sales RevoU",
+    "description": "terserah",
+    "technology": "Python",
+    "image": "../projects/porto2.jpg",
+    "link": "https://colab.research.google.com/drive/1bJs2AgRpDbEht_dkQCHfcDoa13DJsAnS?usp=sharing"
+  },
+  {
+    "title": "SQL Games Sales",
+    "description": "bodo amat deh",
+    "technology": "SQL",
+    "image": "../projects/porto1.jpg",
+    "link": "https://console.cloud.google.com/bigquery?project=fluent-vortex-370904&ws=!1m5!1m4!4m3!1sfluent-vortex-370904!2sgame_sales!3sgames_clean&pli=1"
+  },
+  {
+    "title": "Iseng aesih",
+    "description": "iseng ae pak",
+    "technology": "Python",
+    "image": "../projects/porto2.jpg",
+    "link": "https://colab.research.google.com/drive/1bJs2AgRpDbEht_dkQCHfcDoa13DJsAnS?usp=sharing"
+  },
+  {
+    "title": "Ragam Potensi Kedungrejo",
+    "description": "sisa sisa kemaren",
+    "technology": "PremierPro",
+    "image": "../projects/porto1.jpg",
+    "link": "https://youtu.be/0C1kjmVzbsw"
+  },
+  {
+    "title": "Games Sales Excel",
+    "description": "haha hihi huhu",
+    "technology": "Excel",
+    "image": "../projects/porto2.jpg",
+    "link": "https://drive.google.com/file/d/1vqwz_k9hu_Vats0mm1TEuuxF3v4ii3lL/view?usp=sharing"
+  },
+  {
+    "title": "Moon",
+    "description": "Praesentac rhoncus tortor.",
+    "technology": "Photoshop",
+    "image": "../projects/porto1.jpg",
+    "link": "https://drive.google.com/file/d/1Y-h7nYkoN1_0DGtaq41r4KVk-QGj30nA/view?usp=sharing"
+  },
+  {
+    "title": "Lonely",
+    "description": "Sendirian enakkk wkwk",
+    "technology": "Photoshop",
+    "image": "../projects/porto2.jpg",
+    "link": "https://drive.google.com/file/d/1-qZj-VTDyMrU4zG-qZ89e3Pby3TLErH8/view?usp=sharing"
+  }
+]

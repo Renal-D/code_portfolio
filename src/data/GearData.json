@@ -1,0 +1,87 @@
+{
+  "gearType": [
+    {
+      "gear": "Hardware / Computers",
+      "gearList": [
+        {
+          "item": "HP bx-1400XX",
+          "desc": "My Personal computer that i used.",
+          "type": ["computer", "Hewlett Packard"]
+        },
+        {
+          "item": "Keychron K2",
+          "desc": "A low profile mechanical keyboard with brown gateron switches.",
+          "type": ["keyboard"]
+        },
+        {
+          "item": "Rexus Daxa",
+          "desc": "Just a regular mouse with a gaming gimmick that fit in my palm.",
+          "type": ["mouse", "Daxa"]
+        }
+      ]
+    },
+    {
+      "gear": "Hardware / Monitors",
+      "gearList": [
+        {
+          "item": "AOC Q32G3S",
+          "desc": "My main monitor that big enough to fill my desk, this one is 24\" but it's curved, idk why i bought this.",
+          "type": ["monitor", "external display"]
+        }
+      ]
+    },
+    {
+      "gear": "Hardware / Audio",
+      "gearList": [
+        {
+          "item": "Steelseries Arctis 7",
+          "desc": "Pretty awesome headphones. I used the Arctis 5 before, this is just a nice upgrade. No more cables. uh I forget the chat mix feature is awesome!",
+          "type": ["headphone"]
+        },
+        {
+          "item": "Gamen Pro",
+          "desc": "I switch between my Buds and my Arctis 7. I used Buds more often when am outside or in my office. I love the noise cancelling support and you can connect 2 bluetooth sources at the same time.",
+          "type": ["headset", "earphone"]
+        }
+      ]
+    },
+    {
+      "gear": "Software",
+      "gearList": [
+        {
+          "item": "Visual Studio Code",
+          "desc": "Bruh everyone use this, it had a lot of extension and easy to customize.",
+          "type": ["IDE"]
+        },
+        {
+          "item": "GIT",
+          "desc": "A BLAZINGLY FAST text editor that i use when am on the terminal.",
+          "type": ["editor"]
+        },
+        {
+          "item": "Photoshop",
+          "desc": "my software editing photos",
+          "type": ["terminal"]
+        },
+        {
+          "item": "PowerToys",
+          "desc": "Windows window management sucks. Tools like Spectaccle and Moom make things way better. However, this tool is a bit more magically and really works nicely.",
+          "type": ["window manager", "productivity", "wm"]
+        }
+      ]
+    },
+    {
+      "gear": "Hosting",
+      "gearList": [
+        {
+          "item": "Vercel",
+          "desc": "Formerly known as Now from Zeit. This is a very nice platform to directly deploy all my Next.js apps."
+        },
+        {
+          "item": "GitHub",
+          "desc": "This is a very nice platform to directly deploy all my HTML"
+        }
+      ]
+    }
+  ]
+}

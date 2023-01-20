@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import AboutMe from "./pages/AboutMe";
+import ContactMe from "./pages/ContactMe";
+import Home from "./pages/Home";
+import Layout from "./components/Layout";
+import Projects from "./pages/Projects";
 
-function App() {
+export default function App() {
+  const [isNavbar, setIsNavbar] = useState("/");
+
+  function render(value) {
+    if (value === "/") {
+      return <Home />;
+    } else if (value === "about-me") {
+      return <AboutMe />;
+    } else if (value === "projects") {
+      return <Projects />;
+    } else if (value === "contact-me") {
+      return <ContactMe />;
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout setIsNavbar={setIsNavbar} isNavbar={isNavbar}>
+      <AnimatePresence>{render(isNavbar)}</AnimatePresence>
+    </Layout>
+    
   );
 }
-
-export default App;
