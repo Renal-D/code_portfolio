@@ -3,21 +3,21 @@
     "title": "Team RRQ",
     "description": "RRQ pertama kali gagal melaju ke M Series",
     "technology": "Technology" ,
-    "image": "../projects/livi.jpg",
+    "image": "https://res.cloudinary.com/dmmbiqyub/image/upload/v1701924641/YoRi_a0uhdd.webp",
     "link": "https://renmaruu.github.io"
   },
   {
     "title": "web renal2 nyoba react tailwind",
     "description": "apa aja deh",
     "technology": "Esport",
-    "image": "../projects/porto3.jpg", 
+    "image": "https://res.cloudinary.com/dmmbiqyub/image/upload/v1701924641/serra_v3nzbq.webp", 
     "link": "https://renmaruu.github.io"
   },
   {
     "title": "Python Games Sales RevoU",
     "description": "terserah",
     "technology": "Technology",
-    "image": "../projects/porto4.jpg",
+    "image": "https://res.cloudinary.com/dmmbiqyub/image/upload/v1701924641/carmine1_ukz1br.webp",
     "link": "https://colab.research.google.com/drive/1bJs2AgRpDbEht_dkQCHfcDoa13DJsAnS?usp=sharing"
   }
 ]

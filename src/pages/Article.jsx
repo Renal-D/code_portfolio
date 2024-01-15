@@ -19,7 +19,7 @@ export default function Article() {
     >
       <div className="grid grid-cols-12">
         <button
-          className="md:col-span-3 lg:col-span-2 col-span-full md:border-r border-b border-[#1E2D3D] text-white flex gap-2.5 items-center py-2.5 pl-4"
+          className="md:col-span-3 lg:col-span-2 col-span-full md:border-r border-b border-[#3D3B40] text-white flex gap-2.5 items-center py-2.5 pl-4"
           onClick={() => setArticle(!article)}
         >
           <GoTriangleDown
@@ -27,13 +27,13 @@ export default function Article() {
           />
           <span>article</span>
         </button>
-        <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#1E2D3D] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
+        <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#3D3B40] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
           {filter} article
         </div>
       </div>
 
       <div className="grid grid-cols-12 h-full ">
-        <div className="lg:col-span-2 col-span-full md:col-span-3 md:border-r border-[#1E2D3D] px-0 md:px-5 md:py-4 py-0 flex flex-col gap-4 overflow-hidden">
+        <div className="lg:col-span-2 col-span-full md:col-span-3 md:border-r border-[#3D3B40] px-0 md:px-5 md:py-4 py-0 flex flex-col gap-4 overflow-hidden">
           <Transition
             show={article}
             enter="transition ease-in duration-200"
@@ -121,9 +121,9 @@ const Card = ({ data }) => {
   return (
     <>
       <motion.div
-        className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col overflow-hidden hover:shadow-sm hover:shadow-[#607B96] transition-colors h-[400px]"
-        whileHover={{ scale:1.01, rotate: 1,boxShadow: "0px 0px 8px rgba(255,255,255)" }}
-        transition={{ type: 'spring', stiffness:300, damping:10 }}
+        className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col overflow-hidden hover:shadow-sm hover:shadow-[#607B96] transition-colors h-[400px]"
+        whileHover={{ scale:1.03, boxShadow: "0px 0px 8px rgba(255,255,255)" }}
+        transition={{ type: 'spring', stiffness:400, damping:10 }}
       >
         <div className="overflow-hidden h-[80%] w-full relative ">
           <img

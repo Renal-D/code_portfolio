@@ -10,7 +10,43 @@ import { MdCall } from "@react-icons/all-files/md/MdCall";
 import { MdEmail } from "@react-icons/all-files/md/MdEmail";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
-import { CopyBlock, nord } from "react-code-blocks";
+import { CopyBlock } from "react-code-blocks";
+const pinkMintTheme = {
+  lineNumberColor: "#999",
+  lineNumberBgColor: "#f0f0f0",
+  backgroundColor: "000000", // black
+  textColor: "#ffffff", // white
+  substringColor: "#FF3796", // pink
+  keywordColor: "#66d9ef", // blue
+  attributeColor: "#e6db74", // kuning
+  selectorAttributeColor: "#e6db74", // kuning
+  docTagColor: "#e6db74", // kuning
+  nameColor: "#f8f8f2", // white
+  builtInColor: "#FF3796", // hijau
+  literalColor: "#ae81ff", // purple
+  bulletColor: "#ae81ff", // purple
+  codeColor: "#FF3796", // hijau
+  additionColor: "#e6db74", // kuning
+  regexpColor: "#e6db74", // kuning
+  symbolColor: "#e6db74", // kuning
+  variableColor: "#FF3796", // pink
+  templateVariableColor: "#e6db74", // kuning
+  linkColor: "#ae81ff", // purple
+  selectorClassColor: "#e6db74", // kuning
+  typeColor: "#66d9ef", // blue
+  stringColor: "#43D9AD", // hijau
+  selectorIdColor: "#e6db74", // kuning
+  quoteColor: "#ae81ff", // purple
+  templateTagColor: "#43D9AD", // hijau
+  deletionColor: "#e6db74", // kuning
+  titleColor: "#66d9ef", // blue
+  sectionColor: "#66d9ef", // blue
+  commentColor: "#75715e", // gray
+  metaKeywordColor: "#66d9ef", // blue
+  metaColor: "#75715e", // gray
+  functionColor: "#66d9ef", // blue
+  numberColor: "#ae81ff", // purple
+};
 
 export default function ContactMe() {
   const d = new Date();
@@ -91,9 +127,9 @@ export default function ContactMe() {
                 <form
                   onSubmit={sendEmail}
                   ref={formRef}
-                  className="text-[#607B96] md:w-[80%] w-[90%] flex flex-col gap-6 relative"
+                  className="text-[#607B96] md:w-[85%] w-[90%] flex flex-col gap-6 relative"
                 >
-                  <div className="flex flex-col gap-2.5">
+                  <div className="flex gap-2">
                     <label htmlFor="form_name">_name:</label>
                     <input
                       name="form_name"
@@ -107,7 +143,7 @@ export default function ContactMe() {
                       }}
                     />
                   </div>
-                  <div className="flex flex-col gap-1.5">
+                  <div className="flex gap-2">
                     <label htmlFor="email">_email:</label>
                     <input
                       name="email"
@@ -121,7 +157,7 @@ export default function ContactMe() {
                       }}
                     />
                   </div>
-                  <div className="flex flex-col gap-1.5">
+                  <div className="flex flex-col gap-2">
                     <label htmlFor="message">_message:</label>
                     <textarea
                       name="message"
@@ -163,21 +199,19 @@ export default function ContactMe() {
               <div className="hidden lg:block w-1/2 h-full">
                 <div className="flex items-center justify-start overflow-hidden h-full">
                   <CopyBlock
-                    language={`jsx`}
-                    text={`const button = document.querySelector('#sendBtn');
+                    language={`python`}
+                    text={`def send_message() -> None:
+  message: list = [
+    name: str = "Renaldi Dwi",
+    email: str = "renaldi31saputra@gmail.com",
+    message: "Hey!",
+    date: "${d.getDate()} ${month[d.getMonth()]} ${d.getFullYear()}"
+    ] 
 
-const message = {
-	name: "Renaldi Dwi",
-	email: "renaldi31saputra@gmail.com",
-	message: "Hey!",
-	date: "${d.getDate()} ${month[d.getMonth()]} ${d.getFullYear()}"
-}
-
-button.addEventListener('click', () => {
-	form.send(message);
-})`}
+send_message();
+`}
                     showLineNumbers={true}
-                    theme={nord}
+                    theme={pinkMintTheme}
                     wrapLines={true}
                     codeBlock
                   />

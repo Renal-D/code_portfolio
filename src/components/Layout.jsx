@@ -43,11 +43,11 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
   return (
     <div
       className="h-screen flex bg-[#15010d] items-center justify-center bg-no-repeat bg-cover bg-center"
-      style={{ backgroundImage: `url("akalii.jpg")` }}
+      style={{ backgroundImage: `url("https://res.cloudinary.com/dmmbiqyub/image/upload/v1705356138/thumb-1920-1081933_znjzb3.jpg")` }}
     >
-      <div className="custom-size bg-[#010c15]/[85%] backdrop-blur-md rounded-lg border border-[#1E2D3D] flex justify-between flex-col overflow-hidden">
-        <header className="grid grid-cols-12  text-[#607B96] border-b border-[#1E2D3D] items-center">
-          <div className="lg:col-span-2 col-span-11 lg:border-r border-[#1E2D3D] py-4 pl-4">
+      <div className="custom-size bg-[#0F0F0F]/[90%] backdrop-blur-md rounded-lg border border-[#3D3B40] flex justify-between flex-col overflow-hidden">
+        <header className="grid grid-cols-12  text-[#607B96] border-b border-[#3D3B40] items-center">
+          <div className="lg:col-span-2 col-span-11 lg:border-r border-[#3D3B40] py-4 pl-4">
             <span>Renaldi Dwi</span>
           </div>
 
@@ -56,7 +56,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
             <nav className="flex justify-between items-center">
               <div>
                 <button
-                  className={`px-5 py-4 border-r border-r-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
+                  className={`px-5 py-4 border-r border-r-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
                     isNavbar === "/"
                       ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-transparent"
@@ -68,7 +68,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   _hello
                 </button>
                 <button
-                  className={`px-5 py-4 border-r border-r-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
+                  className={`px-5 py-4 border-r border-r-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
                     isNavbar === "about-me"
                       ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-transparent"
@@ -80,7 +80,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   _about-me
                 </button>
                 <button
-                  className={`px-5 py-4 border-r border-r-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
+                  className={`px-5 py-4 border-r border-r-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
                     isNavbar === "projects"
                       ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-transparent"
@@ -92,7 +92,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   _projects
                 </button>
                 <button
-                  className={`px-5 py-4 border-r border-r-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
+                  className={`px-5 py-4 border-r border-r-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
                     isNavbar === "article"
                       ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-transparent"
@@ -107,7 +107,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
 
               <button
                 id="border-b"
-                className={`px-5 py-4 border-l border-l-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
+                className={`px-5 py-4 border-l border-l-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
                   isNavbar === "contact-me"
                     ? "border-b-2 border-[#FF3796] text-white"
                     : "border-b-transparent"
@@ -153,7 +153,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   className={`px-5 py-4 border-b  transition-all w-full text-left ${
                     isNavbar === "/"
                       ? "border-b-2 border-[#FF3796] text-white"
-                      : "border-b-[#1E2D3D]"
+                      : "border-b-[#3D3B40]"
                   }`}
                   onClick={() => {
                     setIsNavbar("/");
@@ -166,7 +166,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   className={`px-5 py-4 border-b  transition-all w-full text-left ${
                     isNavbar === "about-me"
                       ? "border-b-2 border-[#FF3796] text-white"
-                      : "border-b-[#1E2D3D]"
+                      : "border-b-[#3D3B40]"
                   }`}
                   onClick={() => {
                     setIsNavbar("about-me");
@@ -179,7 +179,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   className={`px-5 py-4 border-b  transition-all w-full text-left ${
                     isNavbar === "projects"
                       ? "border-b-2 border-[#FF3796] text-white"
-                      : "border-b-[#1E2D3D]"
+                      : "border-b-[#3D3B40]"
                   }`}
                   onClick={() => {
                     setIsNavbar("projects");
@@ -192,7 +192,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   className={`px-5 py-4 border-b  transition-all w-full text-left ${
                     isNavbar === "contact-me"
                       ? "border-b-2 border-[#FF3796] text-white"
-                      : "border-b-[#1E2D3D]"
+                      : "border-b-[#3D3B40]"
                   }`}
                   onClick={() => {
                     setIsNavbar("contact-me");
@@ -204,14 +204,14 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
               </div>
 
               <footer className="block lg:hidden">
-                <div className="grid grid-cols-12 px-5 text-[#607B96] border-t border-[#1E2D3D]">
+                <div className="grid grid-cols-12 px-5 text-[#607B96] border-t border-[#3D3B40]">
                   <div className="col-span-11 flex items-center">
                     <p className="pr-4 py-1.5">find me in:</p>
                     <a
                       href="https://twitter.com/renaldii06"
                       target="_blank"
                       rel="noreferrer"
-                      className="px-2.5 py-2.5 border-x border-[#1E2D3D] hover:text-white transition-colors"
+                      className="px-2.5 py-2.5 border-x border-[#3D3B40] hover:text-white transition-colors"
                       aria-label="Follow me on twitter"
                     >
                       <AiOutlineTwitter />
@@ -220,7 +220,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                       href="https://discordapp.com/users/701782875904933948"
                       target="_blank"
                       rel="noreferrer"
-                      className="px-2.5 py-2.5 border-r border-[#1E2D3D] hover:text-white transition-colors"
+                      className="px-2.5 py-2.5 border-r border-[#3D3B40] hover:text-white transition-colors"
                       aria-label="Follow me on Discord"
                     >
                       <FaDiscord />
@@ -229,7 +229,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   <div className="col-span-1 flex items-center justify-end">
                     <a
                       href="https://github.com/renal-d"
-                      className="flex items-center justify-center gap-1.5 pl-4 border-l border-[#1E2D3D] py-1.5 hover:text-white transition-colors"
+                      className="flex items-center justify-center gap-1.5 pl-4 border-l border-[#3D3B40] py-1.5 hover:text-white transition-colors"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Follow me on github"
@@ -247,7 +247,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
             </main>
           )}
         </AnimatePresence>
-        <footer className="lg:flex items-center justify-between text-[#607B96] hidden border-t border-[#1E2D3D]">
+        <footer className="lg:flex items-center justify-between text-[#607B96] hidden border-t border-[#3D3B40]">
           <div className="flex items-center gap-x-2">
             <div className="flex items-center">
               <SiVim className="w-[30px] h-[30px] p-2 bg-[#c24147] text-[#d0d3d8]" />

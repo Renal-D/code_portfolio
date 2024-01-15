@@ -76,7 +76,7 @@ export default function AboutMe() {
     >
       <div className="lg:grid grid-cols-12 h-full flex flex-col ">
         <div className="col-span-2 grid lg:grid-cols-6">
-          <div className="col-span-6 lg:border-r lg:border-b-0 border-b border-[#1E2D3D] text-white gap-2.5 relative overflow-hidden">
+          <div className="col-span-6 lg:border-r lg:border-b-0 border-b border-[#3D3B40] text-white gap-2.5 relative overflow-hidden">
             <PersonalInfo setRender={setRender} render={render} />
           </div>
         </div>
@@ -108,8 +108,8 @@ function MyBio({ closeBio }) {
       exit={{ x: 50, opacity: 0 }}
     >
       <div className="w-full">
-        <div className="grid grid-cols-12 border-b border-[#1E2D3D]">
-          <div className="lg:col-span-2 md:col-span-6 col-span-12  text-white border-r border-[#1E2D3D] py-2.5 relative px-4">
+        <div className="grid grid-cols-12 border-b border-[#3D3B40]">
+          <div className="lg:col-span-2 md:col-span-6 col-span-12  text-white border-r border-[#3D3B40] py-2.5 relative px-4">
             <button
               className="absolute top-1/2 -translate-y-1/2 right-4"
               onClick={() => {
@@ -154,8 +154,8 @@ function Skills({ closeSkills }) {
       exit={{ x: 50, opacity: 0 }}
     >
       <div className="w-full">
-        <div className="grid grid-cols-12 border-b border-[#1E2D3D]">
-          <div className="lg:col-span-2 md:col-span-6 col-span-12  text-white border-r border-[#1E2D3D] py-2.5 relative px-4">
+        <div className="grid grid-cols-12 border-b border-[#3D3B40]">
+          <div className="lg:col-span-2 md:col-span-6 col-span-12  text-white border-r border-[#3D3B40] py-2.5 relative px-4">
             <button
               className="absolute top-1/2 -translate-y-1/2 right-4"
               onClick={() => {
@@ -173,7 +173,7 @@ function Skills({ closeSkills }) {
           language={`python`}
           text={`
 # Most important skills
-  Programming & Data Analysis : list = [
+  Programming & Data Analysis: list = [
     "SQL = beginner",
     "Python = beginner",
     "Excel = intermediate",
@@ -181,7 +181,7 @@ function Skills({ closeSkills }) {
     "PowerBI = intermediate",
     "PowerPoint = intermediate",
     ]
-  Editing : list = [
+  Editing: list = [
     "Photoshop = intermediate",
     "Premiere Pro = intermediate",
     "CorelDraw = beginner", 
@@ -207,8 +207,8 @@ function Journey({ closeJourney }) {
       exit={{ x: 50, opacity: 0 }}
     >
       <div className="w-full">
-        <div className="grid grid-cols-12 border-b border-[#1E2D3D]">
-          <div className="lg:col-span-2 md:col-span-6 col-span-12 text-white border-r border-[#1E2D3D] py-2.5 relative px-4">
+        <div className="grid grid-cols-12 border-b border-[#3D3B40]">
+          <div className="lg:col-span-2 md:col-span-6 col-span-12 text-white border-r border-[#3D3B40] py-2.5 relative px-4">
             <button
               className="absolute top-1/2 -translate-y-1/2 right-4"
               onClick={() => {
@@ -226,7 +226,7 @@ function Journey({ closeJourney }) {
           language={`python`}
           text={`
 # Learning Information
-  school : list = [
+  school: list = [
     "SMAN 1 Kawedanan = IPA",
     "Universitas Negeri Malang = Physics",
   ]
@@ -236,14 +236,14 @@ function Journey({ closeJourney }) {
   ]
 
 # Organization Information
-  organization : list = [
+  organization: list = [
     "SMAN 1 Kawedanan = Pramuka",
     "SMAN 1 Kawedanan = Basketball",
     "Universitas Negeri Malang = Komite Olahraga FMIPA",
 
 # Work Information
-  profession = 'Job Seeker',
-  employer = '',
+  profession: str = 'Job Seeker',
+  employer: str = '',
 `}
           showLineNumbers={true}
           theme={pinkMintTheme}
@@ -299,8 +299,8 @@ function Gear({ closeGear }) {
       exit={{ x: 50, opacity: 0 }}
     >
       <div className="w-full">
-        <div className="grid grid-cols-12 border-b border-[#1E2D3D]">
-          <div className="lg:col-span-3 md:col-span-6 col-span-12 text-white border-r border-[#1E2D3D] py-2.5 relative px-4">
+        <div className="grid grid-cols-12 border-b border-[#3D3B40]">
+          <div className="lg:col-span-3 md:col-span-6 col-span-12 text-white border-r border-[#3D3B40] py-2.5 relative px-4">
             <button
               className="absolute top-1/2 -translate-y-1/2 right-4"
               onClick={() => closeGear("/")}
@@ -330,8 +330,8 @@ function Images({ closeImages }) {
       exit={{ x: 50, opacity: 0 }}
     >
       <div className="w-full">
-        <div className="grid grid-cols-12 border-b border-[#1E2D3D]">
-          <div className="lg:col-span-3 md:col-span-6 col-span-12 text-white border-r border-[#1E2D3D] py-2.5 relative px-4">
+        <div className="grid grid-cols-12 border-b border-[#3D3B40]">
+          <div className="lg:col-span-3 md:col-span-6 col-span-12 text-white border-r border-[#3D3B40] py-2.5 relative px-4">
             <button
               className="absolute top-1/2 -translate-y-1/2 right-4"
               onClick={() => closeImages("/")}
@@ -345,7 +345,7 @@ function Images({ closeImages }) {
       <div className="overflow-y-auto scrollbar-thin scroll-m-0 lg:p-16 md:p-8 p-4">
         <motion.div className="items-center text-xl text-white/50 underline">
         <p className="hover:text-white ml-5"><li>Ijazah</li></p>
-        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
         <motion.img src="../gallery/ijazah.jpg" alt="ijazah" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 8px rgba(255,255,255)", scale:"1.01" }}
         whileTap={{
           scale: 1.3}}
@@ -353,7 +353,7 @@ function Images({ closeImages }) {
         </motion.div>
         <br /><br />
         <p className="hover:text-white ml-5"><li>Transkrip Nilai</li></p>
-        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
         <motion.img src="../gallery/transkrip.jpg" alt="transkrip" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 8px rgba(255,255,255)", scale:"1.01" }}
         whileTap={{
           scale: 1.3}}
@@ -361,7 +361,7 @@ function Images({ closeImages }) {
         </motion.div>
         <br /><br />
         <p className="hover:text-white ml-5"><li>English Proficiency Test</li></p>
-        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
         <motion.img src="../gallery/ept.jpg" alt="ept" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
         whileTap={{
           scale: 1.3}}
@@ -369,7 +369,7 @@ function Images({ closeImages }) {
         </motion.div>
         <br /><br />
         <p className="hover:text-white ml-5"><li>IcoLiST 2022</li></p>
-        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
         <motion.img src="../gallery/icolist.jpg" alt="icolist" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
         whileTap={{
           scale: 1.3}}
@@ -377,7 +377,7 @@ function Images({ closeImages }) {
         </motion.div>
         <br /><br />
         <p className="hover:text-white ml-5"><li>RevoU Mini-Course Data Analyst</li></p>
-        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
         <motion.img src="../gallery/revou.png" alt="revou" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
         whileTap={{
           scale: 1.3}}
@@ -385,7 +385,7 @@ function Images({ closeImages }) {
         </motion.div>
         <br /><br />
         <p className="hover:text-white ml-5"><li>MySkill Webinar</li></p>
-        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
         <motion.img src="../gallery/myskill.png" alt="myskill" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
         whileTap={{
           scale: 1.3}}
@@ -393,7 +393,7 @@ function Images({ closeImages }) {
         </motion.div>
         <br /><br />
         <p className="hover:text-white ml-5"><li>Wild Rift RRQ Academy</li></p>
-        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
         <motion.img src="../gallery/rrqaca.jpg" alt="rrq" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
         whileTap={{
           scale: 1.3}}
@@ -434,7 +434,7 @@ function PersonalInfo({ setRender, render }) {
           <Popover.Button
             className={`
                 ${isOpen ? "text-white" : "text-white/50"}
-               flex items-center gap-2.5 border-b border-[#1E2D3D] py-2.5 px-4 w-full`}
+               flex items-center gap-2.5 border-b border-[#3D3B40] py-2.5 px-4 w-full`}
             onClick={openPopover}
           >
             <GoTriangleDown
