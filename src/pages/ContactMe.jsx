@@ -129,12 +129,12 @@ export default function ContactMe() {
                   ref={formRef}
                   className="text-[#607B96] md:w-[85%] w-[90%] flex flex-col gap-6 relative"
                 >
-                  <div className="flex gap-2">
+                  <div className="flex flex-col gap-1.5">
                     <label htmlFor="form_name">_name:</label>
                     <input
                       name="form_name"
                       type="text"
-                      placeholder=""
+                      placeholder="Your Name"
                       className="bg-[#011221] rounded-lg border-[#1E2D3D] focus:ring-[#607B96] focus:border-[#607B96]/30 text-white placeholder:text-[#465E77]"
                       autoComplete="off"
                       required
@@ -143,12 +143,12 @@ export default function ContactMe() {
                       }}
                     />
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex flex-col gap-1.5">
                     <label htmlFor="email">_email:</label>
                     <input
                       name="email"
                       type="email"
-                      placeholder=""
+                      placeholder="your_email@gmail.com"
                       className="bg-[#011221] rounded-lg border-[#1E2D3D]  focus:ring-[#607B96] focus:border-[#607B96]/30 text-white placeholder:text-[#465E77]"
                       autoComplete="off"
                       required
