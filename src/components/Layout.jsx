@@ -2,7 +2,7 @@
 import { AiOutlineTwitter } from "@react-icons/all-files/ai/AiOutlineTwitter";
 import { AiOutlineGithub } from "@react-icons/all-files/ai/AiOutlineGithub";
 import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
-import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF";
+import { FaDiscord } from "@react-icons/all-files/fa/FaDiscord";
 import { FiMenu } from "@react-icons/all-files/fi/FiMenu";
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -34,13 +34,13 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
       window.removeEventListener("resize", detectSize);
     };
   }, [windowDimenion]);
-  // bg-[#010c15]
+  // bg-[#010c15] #011627
   return (
     <div
-      className="h-screen flex bg-[#010c15] items-center justify-center bg-no-repeat bg-cover bg-center"
-      style={{ backgroundImage: `url("back2.webp")` }}
+      className="h-screen flex bg-[#15010d] items-center justify-center bg-no-repeat bg-cover bg-center"
+      style={{ backgroundImage: `url("akalii.jpg")` }}
     >
-      <div className="custom-size bg-[#011627]/[85%] backdrop-blur-md rounded-lg border border-[#1E2D3D] flex justify-between flex-col overflow-hidden">
+      <div className="custom-size bg-[#010c15]/[85%] backdrop-blur-md rounded-lg border border-[#1E2D3D] flex justify-between flex-col overflow-hidden">
         <header className="grid grid-cols-12  text-[#607B96] border-b border-[#1E2D3D] items-center">
           <div className="lg:col-span-2 col-span-11 lg:border-r border-[#1E2D3D] py-4 pl-4">
             <span>Renaldi Dwi</span>
@@ -85,6 +85,18 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   }}
                 >
                   _projects
+                </button>
+                <button
+                  className={`px-5 py-4 border-r border-r-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
+                    isNavbar === "article"
+                      ? "border-b-2 border-[#FEA55F] text-white"
+                      : "border-b-transparent"
+                  }`}
+                  onClick={() => {
+                    setIsNavbar("article");
+                  }}
+                >
+                  _article
                 </button>
               </div>
 
@@ -200,13 +212,13 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                       <AiOutlineTwitter />
                     </a>
                     <a
-                      href="https://www.facebook.com/ApaSihMauLoLihatProfilGua/"
+                      href="https://discordapp.com/users/701782875904933948"
                       target="_blank"
                       rel="noreferrer"
                       className="px-2.5 py-2.5 border-r border-[#1E2D3D] hover:text-white transition-colors"
                       aria-label="Follow me on facebook"
                     >
-                      <FaFacebookF />
+                      <FaDiscord />
                     </a>
                   </div>
                   <div className="col-span-1 flex items-center justify-end">
@@ -243,13 +255,13 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
               <AiOutlineTwitter />
             </a>
             <a
-              href="https://www.facebook.com/ApaSihMauLoLihatProfilGua/"
+              href="https://discordapp.com/users/701782875904933948"
               target="_blank"
               rel="noreferrer"
               className="px-2.5 py-2.5 border-r border-[#1E2D3D] hover:text-white transition-colors"
               aria-label="Follow me on facebook"
             >
-              <FaFacebookF />
+              <FaDiscord />
             </a>
           </div>
           <div className="col-span-10 flex items-center justify-end ">

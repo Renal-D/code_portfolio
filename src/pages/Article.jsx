@@ -1,16 +1,15 @@
 import { Dialog, Transition } from "@headlessui/react";
+import { SiNintendogamecube } from "@react-icons/all-files/si/SiNintendogamecube";
 import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
-import { GiArtificialIntelligence } from "@react-icons/all-files/gi/GiArtificialIntelligence";
-import { DiPhotoshop } from "@react-icons/all-files/di/DiPhotoshop";
-import { AiOutlineConsoleSql } from "@react-icons/all-files/ai/AiOutlineConsoleSql";
+import { FaGamepad } from "@react-icons/all-files/fa/FaGamepad";
 import { motion } from "framer-motion";
 import { Fragment, useState } from "react";
-import datas from "../data/ProjectData.json";
+import datas from "../data/ArticleData.json";
 
-export default function Projects() {
+export default function Article() {
   const [filter, setFilter] = useState("all");
-  const [project, setProject] = useState(true);
+  const [article, setArticle] = useState(true);
   return (
     <motion.div
       className="h-full relative"
@@ -21,22 +20,22 @@ export default function Projects() {
       <div className="grid grid-cols-12">
         <button
           className="md:col-span-3 lg:col-span-2 col-span-full md:border-r border-b border-[#1E2D3D] text-white flex gap-2.5 items-center py-2.5 pl-4"
-          onClick={() => setProject(!project)}
+          onClick={() => setArticle(!article)}
         >
           <GoTriangleDown
-            className={`${project ? "" : "-rotate-90"} transition-all`}
+            className={`${article ? "" : "-rotate-90"} transition-all`}
           />
-          <span>projects</span>
+          <span>article</span>
         </button>
         <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#1E2D3D] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
-          {filter} projects
+          {filter} article
         </div>
       </div>
 
       <div className="grid grid-cols-12 h-full ">
         <div className="lg:col-span-2 col-span-full md:col-span-3 md:border-r border-[#1E2D3D] px-0 md:px-5 md:py-4 py-0 flex flex-col gap-4 overflow-hidden">
           <Transition
-            show={project}
+            show={article}
             enter="transition ease-in duration-200"
             enterFrom="opacity-0 -translate-y-1"
             enterTo="opacity-100 translate-y-0"
@@ -53,40 +52,29 @@ export default function Projects() {
                 onClick={() => setFilter("all")}
               >
                 <BsFiles />
-                <span>All Projects</span>
+                <span>All Article</span>
               </button>
             </div>
             <div className="flex items-center gap-6 ">
               <button
                 className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "DataAnalysis" ? "text-white" : "text-[#607B96]"
+                  filter === "Technology" ? "text-white" : "text-[#607B96]"
                 }`}
-                onClick={() => setFilter("DataAnalysis")}
+                onClick={() => setFilter("Technology")}
               >
-                <AiOutlineConsoleSql />
-                <span>Data Analysis</span> 
+                <SiNintendogamecube />
+                <span>Technology</span>
               </button>
             </div>
             <div className="flex items-center gap-6 ">
               <button
                 className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "MachineLearning" ? "text-white" : "text-[#607B96]"
+                  filter === "Esport" ? "text-white" : "text-[#607B96]"
                 }`}
-                onClick={() => setFilter("MachineLearning")} 
+                onClick={() => setFilter("Esport")}
               >
-                <GiArtificialIntelligence />
-                <span>Machine Learning</span> 
-              </button>
-            </div>
-            <div className="flex items-center gap-6">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "Design" ? "text-white" : "text-[#607B96]"
-                }`}
-                onClick={() => setFilter("Design")}
-              >
-                <DiPhotoshop />
-                <span>Design</span>
+                <FaGamepad />
+                <span>Esport</span>
               </button>
             </div>
           </Transition>
@@ -122,14 +110,11 @@ const Card = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   function generateIcon(value) {
-    if (value.includes("DataAnalysis")) {
-      return <AiOutlineConsoleSql />;
+    if (value.includes("Technology")) {
+      return <SiNintendogamecube />;
     }
-    if (value.includes("Design")) {
-      return <DiPhotoshop />;
-    }
-    if (value.includes("MachineLearning")) {
-      return <GiArtificialIntelligence />;
+    if (value.includes("Esport")) {
+      return <FaGamepad />;
     }
   }
 
@@ -137,8 +122,8 @@ const Card = ({ data }) => {
     <>
       <motion.div
         className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col overflow-hidden hover:shadow-sm hover:shadow-[#607B96] transition-colors h-[400px]"
-        whileHover={{ scale:1.03, boxShadow: "0px 0px 8px rgba(255,255,255)" }}
-        transition={{ type: "spring", stiffness:400, damping:10 }}
+        whileHover={{ scale:1.01, rotate: 1,boxShadow: "0px 0px 8px rgba(255,255,255)" }}
+        transition={{ type: 'spring', stiffness:300, damping:10 }}
       >
         <div className="overflow-hidden h-[80%] w-full relative ">
           <img
@@ -164,7 +149,9 @@ const Card = ({ data }) => {
           <motion.button
             className="bg-[#1b2b3a] text-white py-2.5 px-3.5 rounded-lg  w-max"
             onClick={() => setIsOpen(true)}
-            whileHover={{ scale: 1.03 }}
+            whileHover={{ scale: 1.03, 
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             view-project
           </motion.button>

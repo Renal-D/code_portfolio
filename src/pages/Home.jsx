@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/jsx-no-comment-textnodes */
-import { RiCloseLine } from "@react-icons/all-files/ri/RiCloseLine";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
@@ -59,11 +58,14 @@ export default function Home() {
                 }}
                 onInit={(typewriter) => {
                   typewriter
-                    .typeString("data-enthusiast_")
+                    .typeString("data-scientist_")
                     .pauseFor(1000)
                     .deleteAll()
-                    .typeString("esport-enthusiast_")
+                    .typeString("love-about-ai-&-ml_")
                     .pauseFor(500)
+                    .deleteAll()
+                    .typeString("esport-enthusiast_")
+                    .pauseFor(0)
                     .start();
                 }}
               />
@@ -74,7 +76,7 @@ export default function Home() {
           <ul>
             <motion.button
             className="bg-[#1b2b3a] text-white py-2.5 px-3.5 rounded-lg  w-max"
-            whileHover={{ scale: 1.03, rotate: 1, boxShadow: "0px 0px 8px rgba(255,255,255)", 
+            whileHover={{ scale: 1.03, boxShadow: "0px 0px 8px rgba(255,255,255)", 
             }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
@@ -82,11 +84,11 @@ export default function Home() {
           </motion.button>
             </ul><br />
             <p className="text-[#607B96]">
-              // you can also see it on my Github page
+              # you can also see it on my Github page
             </p>
             <p>
-              <span className="text-[#4D5BCE]">const</span>{" "}
-              <span className="text-[#43D9AD]">githubLink</span>{" "}
+              {/* <span className="text-[#4D5BCE]">const</span>{" "} */}
+              <span className="text-[#43D9AD]">githubLink: str </span>{" "}
               <span className="text-white">=</span>{" "}
               <a
                 href="https://github.com/renal-d"
@@ -103,23 +105,7 @@ export default function Home() {
 
         <div className="w-1/2 overflow-hidden max-h-[90%] hidden lg:block mr-5">
         <div className="w-3/4 flex flex-col items-center justify-center">
-          <div className="border border-[#0C1616] bg-gradient-to-br from-[#175553] to-[#43D9AD]/10 rounded-lg p-[35px] backdrop-blur-[32px] relative flex gap-6 items-start justify-center">
-            <img src="./perfil.png" className="image w-full" alt="renal-d" />
-            <div>
-              <div className="x-button-snake p-1 w-max rounded-full top-3 left-3 absolute">
-                <RiCloseLine className="text-[#48b3aa] text-[12px]" />
-              </div>
-              <div className="x-button-snake p-1 w-max rounded-full top-3 right-3 absolute">
-                <RiCloseLine className="text-[#48b3aa] text-[12px]" />
-              </div>
-              <div className="x-button-snake p-1 w-max rounded-full bottom-3 right-3 absolute">
-                <RiCloseLine className="text-[#48b3aa] text-[12px]" />
-              </div>
-              <div className="x-button-snake p-1 w-max rounded-full bottom-3 left-3 absolute">
-                <RiCloseLine className="text-[#48b3aa] text-[12px]" />
-              </div>
-            </div>
-          </div>
+        <img src="https://res.cloudinary.com/dmmbiqyub/image/upload/v1701925071/livii_fwdeuh.webp" className="image w-3/4" alt="renal-d" />
         </div>
       </div>
       </div>

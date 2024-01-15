@@ -9,7 +9,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { CopyBlock, nord } from "react-code-blocks";
 import gearData from "../data/GearData.json";
-import { IoLogoJavascript } from "@react-icons/all-files/io5/IoLogoJavascript";
+import { IoLogoPython } from "@react-icons/all-files/io5/IoLogoPython";
+import { IoImageSharp } from "@react-icons/all-files/io5/IoImageSharp";
 
 export default function AboutMe() {
   const [render, setRender] = useState("my-bio");
@@ -25,6 +26,8 @@ export default function AboutMe() {
       return <Gear closeGear={setRender} />;
     } else if (value === "journey") {
       return <Journey closeJourney={setRender} />;
+    } else if (value === "images") {
+      return <Images closeImages={setRender} />;
     }
   }
 
@@ -45,7 +48,7 @@ export default function AboutMe() {
       </div>
     </motion.div>
   );
-}
+
 
 function Root() {
   return (
@@ -79,7 +82,7 @@ function MyBio({ closeBio }) {
             >
               <AiOutlineClose />
             </button>
-            <p className="pr-5 truncate">personal.js</p>
+            <p className="pr-5 truncate">personal.py</p>
           </div>
         </div>
       </div>
@@ -87,15 +90,15 @@ function MyBio({ closeBio }) {
         <CopyBlock
           language={`jsx`}
           text={`
-const name = 'Renaldi Dwi'
-let location = 'Sidoarjo, Indonesia'
+name: str = 'Renaldi Dwi'
+location: str = 'Sidoarjo, Indonesia'
 
-let hobbies = [
-  "Game"
-  "Programming", 
-  "Analysis", 
+hobbies: list = [
+  "Coding"
+  "Data-analysis", 
+  "Esport", 
   "Basketball", 
-  "More Gaming", 
+  "More Gaming...", 
 ]
           `}
           showLineNumbers={true}
@@ -125,7 +128,7 @@ function Skills({ closeSkills }) {
             >
               <AiOutlineClose />
             </button>
-            <p className="pr-5 truncate">skills.js</p>
+            <p className="pr-5 truncate">skills.py</p>
           </div>
         </div>
       </div>
@@ -133,25 +136,21 @@ function Skills({ closeSkills }) {
         <CopyBlock
           language={`jsx`}
           text={`
-// Most important skills
-  let Programming & Data Analysis = [
+# Most important skills
+  Programming & Data Analysis : list = [
     "SQL = beginner",
     "Python = beginner",
     "Excel = intermediate",
-    "Looker Data Studio = intermediate",
-    "HTML = beginner",
-    "CSS = beginner",
-    "JavaScript = beginner",
     "Tableau = intermediate",
     "PowerBI = intermediate",
     "PowerPoint = intermediate",
     ]
-  let Editing = [
+  Editing : list = [
     "Photoshop = intermediate",
     "Premiere Pro = intermediate",
     "CorelDraw = beginner", 
 
-// am still learning this...
+# am still learning this...
     ]
 `}
           showLineNumbers={true}
@@ -182,7 +181,7 @@ function Journey({ closeJourney }) {
             >
               <AiOutlineClose />
             </button>
-            <p className="pr-5 truncate">journey.js</p>
+            <p className="pr-5 truncate">journey.py</p>
           </div>
         </div>
       </div>
@@ -190,22 +189,25 @@ function Journey({ closeJourney }) {
         <CopyBlock
           language={`jsx`}
           text={`
-// Learning Information
-  let school = [
+# Learning Information
+  school : list = [
     "SMAN 1 Kawedanan = IPA",
     "Universitas Negeri Malang = Physics",
-  let course = [
+  ]
+  course: list = [
     "RevoU = Mini-Course Data Analytics",
+    "Binar Academy x Digitalent Kominfo = Data Science",
+  ]
 
-// Organization Information
-  let organization = [
+# Organization Information
+  organization : list = [
     "SMAN 1 Kawedanan = Pramuka",
     "SMAN 1 Kawedanan = Basketball",
     "Universitas Negeri Malang = Komite Olahraga FMIPA",
 
-// Work Information
-  let profession = 'Job Seeker',
-  let employer = '',
+# Work Information
+  profession = 'Job Seeker',
+  employer = '',
 `}
           showLineNumbers={true}
           theme={nord}
@@ -251,6 +253,7 @@ function Gear({ closeGear }) {
       </div>
     );
   }
+  
 
   return (
     <motion.div
@@ -282,9 +285,95 @@ function Gear({ closeGear }) {
   );
 }
 
+function Images({ closeImages }) {
+  return (
+    <motion.div
+      className="col-span-10 h-full flex  justify-center overflow-hidden flex-col"
+      initial={{ x: -50, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: 50, opacity: 0 }}
+    >
+      <div className="w-full">
+        <div className="grid grid-cols-12 border-b border-[#1E2D3D]">
+          <div className="lg:col-span-3 md:col-span-6 col-span-12 text-white border-r border-[#1E2D3D] py-2.5 relative px-4">
+            <button
+              className="absolute top-1/2 -translate-y-1/2 right-4"
+              onClick={() => closeImages("/")}
+            >
+              <AiOutlineClose />
+            </button>
+            <p>certificate.img</p> 
+          </div>
+        </div>
+      </div>
+      <div className="overflow-y-auto scrollbar-thin scroll-m-0 lg:p-16 md:p-8 p-4">
+        <motion.div className="items-center text-xl text-white/50 underline">
+        <p className="hover:text-white ml-5"><li>Ijazah</li></p>
+        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.img src="../gallery/ijazah.jpg" alt="ijazah" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 8px rgba(255,255,255)", scale:"1.01" }}
+        whileTap={{
+          scale: 1.3}}
+        transition={{ type: 'spring', stiffness:300, damping:10 }} /> 
+        </motion.div>
+        <br /><br />
+        <p className="hover:text-white ml-5"><li>Transkrip Nilai</li></p>
+        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.img src="../gallery/transkrip.jpg" alt="transkrip" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 8px rgba(255,255,255)", scale:"1.01" }}
+        whileTap={{
+          scale: 1.3}}
+        transition={{ type: 'spring', stiffness:300, damping:10 }} /> 
+        </motion.div>
+        <br /><br />
+        <p className="hover:text-white ml-5"><li>English Proficiency Test</li></p>
+        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.img src="../gallery/ept.jpg" alt="ept" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
+        whileTap={{
+          scale: 1.3}}
+        transition={{ type: 'spring', stiffness:300, damping:10 }} /> 
+        </motion.div>
+        <br /><br />
+        <p className="hover:text-white ml-5"><li>IcoLiST 2022</li></p>
+        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.img src="../gallery/icolist.jpg" alt="icolist" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
+        whileTap={{
+          scale: 1.3}}
+        transition={{ type: 'spring', stiffness:300, damping:10 }} /> 
+        </motion.div>
+        <br /><br />
+        <p className="hover:text-white ml-5"><li>RevoU Mini-Course Data Analyst</li></p>
+        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.img src="../gallery/revou.png" alt="revou" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
+        whileTap={{
+          scale: 1.3}}
+        transition={{ type: 'spring', stiffness:300, damping:10 }} /> 
+        </motion.div>
+        <br /><br />
+        <p className="hover:text-white ml-5"><li>MySkill Webinar</li></p>
+        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.img src="../gallery/myskill.png" alt="myskill" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
+        whileTap={{
+          scale: 1.3}}
+        transition={{ type: 'spring', stiffness:300, damping:10 }} /> 
+        </motion.div>
+        <br /><br />
+        <p className="hover:text-white ml-5"><li>Wild Rift RRQ Academy</li></p>
+        <motion.div className="rounded-2xl border border-[#1E2D3D] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
+        <motion.img src="../gallery/rrqaca.jpg" alt="rrq" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
+        whileTap={{
+          scale: 1.3}}
+        transition={{ type: "spring", stiffness:300, damping:10 }} /> 
+        </motion.div>
+        <br /><br />
+        </motion.div>
+      </div>
+    </motion.div>
+  );
+}
+
 function PersonalInfo({ setRender, render }) {
   const [isOpen, setIsOpen] = useState(true);
   const [isOpenBio, setIsOpenBio] = useState(true);
+  const [isOpenImg, setIsOpenImg] = useState(true);
 
   function openPopover() {
     setIsOpen(!isOpen);
@@ -292,10 +381,14 @@ function PersonalInfo({ setRender, render }) {
 
   function CollapseAll() {
     setIsOpenBio(false);
+    setIsOpenImg(false);
   }
 
   function openPopoverBio() {
     setIsOpenBio(!isOpenBio);
+  }
+  function openPopoverImg() {
+    setIsOpenImg(!isOpenImg);
   }
 
   return (
@@ -370,8 +463,8 @@ function PersonalInfo({ setRender, render }) {
                       as="button"
                       onClick={() => setRender("my-bio")}
                     >
-                      <IoLogoJavascript />
-                      <span className="truncate">personal.js</span>
+                      <IoLogoPython />
+                      <span className="truncate">personal.py</span>
                     </Popover.Panel>
                     <Popover.Panel
                       className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${
@@ -380,8 +473,8 @@ function PersonalInfo({ setRender, render }) {
                       as="button"
                       onClick={() => setRender("journey")}
                     >
-                      <IoLogoJavascript />
-                      <span className="truncate">journey.js</span>
+                      <IoLogoPython />
+                      <span className="truncate">journey.py</span>
                     </Popover.Panel>
                     <Popover.Panel
                       className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${
@@ -390,8 +483,8 @@ function PersonalInfo({ setRender, render }) {
                       as="button"
                       onClick={() => setRender("skills")}
                     >
-                      <IoLogoJavascript />
-                      <span className="truncate">skills.js</span>
+                      <IoLogoPython />
+                      <span className="truncate">skills.py</span>
                     </Popover.Panel>
                     <Popover.Panel
                       className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${
@@ -403,7 +496,49 @@ function PersonalInfo({ setRender, render }) {
                       <SiMarkdown />
                       <span className="truncate">gear.md</span>
                     </Popover.Panel>
-                  </Transition>
+                    </Transition>
+
+                    <br />
+                    <Popover.Button
+                    className={`
+                ${isOpenImg ? "text-white" : "text-white/50"}
+               flex items-center gap-2.5  w-full transition-colors`}
+                    onClick={openPopoverImg}
+                  >
+                    <HiChevronRight
+                      className={`${
+                        isOpenImg ? "rotate-90" : ""
+                      } transition-all`}
+                    />
+                    <RiFolder3Fill
+                      className={`${
+                        isOpenImg ? "text-[#E99287]" : "text-[#b36d64]"
+                      } transition-colors`}
+                    />
+                    <span className="pr-5 truncate">gallery</span>
+                  </Popover.Button>
+
+                  <Transition
+                    show={isOpenImg}
+                    enter="transition ease-out duration-200"
+                    enterFrom="opacity-0 -translate-y-1"
+                    enterTo="opacity-100 translate-y-0"
+                    leave="transition ease-linear duration-150"
+                    leaveFrom="opacity-100 translate-y-0"
+                    leaveTo="opacity-0 -translate-y-1"
+                    className="flex flex-col"
+                    >
+                    <Popover.Panel
+                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${
+                        render === "images" ? "text-white" : "text-[#607B96]"
+                      }`}
+                      as="button"
+                      onClick={() => setRender("images")}
+                    >
+                      <IoImageSharp />
+                      <span className="truncate">certificate.img</span>
+                    </Popover.Panel>
+                    </Transition>
                 </>
               </Popover>
             </Popover.Group>
@@ -412,4 +547,4 @@ function PersonalInfo({ setRender, render }) {
       </>
     </Popover>
   );
-}
+}}

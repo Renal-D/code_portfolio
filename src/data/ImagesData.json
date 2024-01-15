@@ -1,0 +1,30 @@
+[
+    {
+        "title": "IcoList 2022",
+        "description": "Websitenya renal pertama",
+        "technology": "HTML" ,
+        "image": "/public/gallery/icolist.PNG",
+        "link": "https://renmaruu.github.io"
+      },
+    {
+        "title": "renal site",
+        "description": "Websitenya renal pertama",
+        "technology": "HTML" ,
+        "image": "/public/gallery/mfc 2019.jpg",
+        "link": "https://renmaruu.github.io"
+      },
+    {
+        "title": "renal site",
+        "description": "Websitenya renal pertama",
+        "technology": "HTML" ,
+        "image": "/public/gallery/sertif_2.jpg",
+        "link": "https://renmaruu.github.io"
+      },
+    {
+        "title": "renal site",
+        "description": "Websitenya renal pertama",
+        "technology": "HTML" ,
+        "image": "/public/gallery/Renaldi Dwi Saputra.png",
+        "link": "https://renmaruu.github.io"
+      }
+]
