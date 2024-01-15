@@ -4,6 +4,11 @@ import { AiOutlineGithub } from "@react-icons/all-files/ai/AiOutlineGithub";
 import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
 import { FaDiscord } from "@react-icons/all-files/fa/FaDiscord";
 import { FiMenu } from "@react-icons/all-files/fi/FiMenu";
+import { SiVim } from "@react-icons/all-files/si/SiVim";
+import { SiPython } from "@react-icons/all-files/si/SiPython";
+import { BsGearFill } from "@react-icons/all-files/bs/BsGearFill";
+import { DiGitBranch } from "@react-icons/all-files/di/DiGitBranch";
+import { AiOutlineFolderOpen } from "@react-icons/all-files/ai/AiOutlineFolderOpen";
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -53,7 +58,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 <button
                   className={`px-5 py-4 border-r border-r-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
                     isNavbar === "/"
-                      ? "border-b-2 border-[#FEA55F] text-white"
+                      ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-transparent"
                   }`}
                   onClick={() => {
@@ -65,7 +70,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 <button
                   className={`px-5 py-4 border-r border-r-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
                     isNavbar === "about-me"
-                      ? "border-b-2 border-[#FEA55F] text-white"
+                      ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-transparent"
                   }`}
                   onClick={() => {
@@ -77,7 +82,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 <button
                   className={`px-5 py-4 border-r border-r-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
                     isNavbar === "projects"
-                      ? "border-b-2 border-[#FEA55F] text-white"
+                      ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-transparent"
                   }`}
                   onClick={() => {
@@ -89,7 +94,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 <button
                   className={`px-5 py-4 border-r border-r-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
                     isNavbar === "article"
-                      ? "border-b-2 border-[#FEA55F] text-white"
+                      ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-transparent"
                   }`}
                   onClick={() => {
@@ -104,7 +109,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 id="border-b"
                 className={`px-5 py-4 border-l border-l-[#1E2D3D] border-b-2 h-full transition-all hover:text-white ${
                   isNavbar === "contact-me"
-                    ? "border-b-2 border-[#FEA55F] text-white"
+                    ? "border-b-2 border-[#FF3796] text-white"
                     : "border-b-transparent"
                 }`}
                 onClick={() => {
@@ -147,7 +152,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 <button
                   className={`px-5 py-4 border-b  transition-all w-full text-left ${
                     isNavbar === "/"
-                      ? "border-b-2 border-[#FEA55F] text-white"
+                      ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-[#1E2D3D]"
                   }`}
                   onClick={() => {
@@ -160,7 +165,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 <button
                   className={`px-5 py-4 border-b  transition-all w-full text-left ${
                     isNavbar === "about-me"
-                      ? "border-b-2 border-[#FEA55F] text-white"
+                      ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-[#1E2D3D]"
                   }`}
                   onClick={() => {
@@ -173,7 +178,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 <button
                   className={`px-5 py-4 border-b  transition-all w-full text-left ${
                     isNavbar === "projects"
-                      ? "border-b-2 border-[#FEA55F] text-white"
+                      ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-[#1E2D3D]"
                   }`}
                   onClick={() => {
@@ -186,7 +191,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                 <button
                   className={`px-5 py-4 border-b  transition-all w-full text-left ${
                     isNavbar === "contact-me"
-                      ? "border-b-2 border-[#FEA55F] text-white"
+                      ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-[#1E2D3D]"
                   }`}
                   onClick={() => {
@@ -216,7 +221,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                       target="_blank"
                       rel="noreferrer"
                       className="px-2.5 py-2.5 border-r border-[#1E2D3D] hover:text-white transition-colors"
-                      aria-label="Follow me on facebook"
+                      aria-label="Follow me on Discord"
                     >
                       <FaDiscord />
                     </a>
@@ -229,7 +234,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                       rel="noreferrer"
                       aria-label="Follow me on github"
                     >
-                      <span className="hidden">Renaldi Dwi</span>
+                      <span className="hidden">Renal-D</span>
                       <AiOutlineGithub className="text-xl" />
                     </a>
                   </div>
@@ -242,38 +247,57 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
             </main>
           )}
         </AnimatePresence>
-        <footer className="lg:grid grid-cols-12 text-[#607B96] border-t border-[#1E2D3D] hidden">
-          <div className="col-span-2 flex items-center">
-            <p className="px-4 py-1.5 truncate">find me in:</p>
-            <a
-              href="https://twitter.com/renaldii06"
-              target="_blank"
-              rel="noreferrer"
-              className="px-2.5 py-2.5 border-x border-[#1E2D3D] hover:text-white transition-colors"
-              aria-label="Follow me on twitter"
-            >
-              <AiOutlineTwitter />
-            </a>
-            <a
-              href="https://discordapp.com/users/701782875904933948"
-              target="_blank"
-              rel="noreferrer"
-              className="px-2.5 py-2.5 border-r border-[#1E2D3D] hover:text-white transition-colors"
-              aria-label="Follow me on facebook"
-            >
-              <FaDiscord />
-            </a>
+        <footer className="lg:flex items-center justify-between text-[#607B96] hidden border-t border-[#1E2D3D]">
+          <div className="flex items-center gap-x-2">
+            <div className="flex items-center">
+              <SiVim className="w-[30px] h-[30px] p-2 bg-[#c24147] text-[#d0d3d8]" />
+              <div className="flex items-center bg-[#1f2328] h-[30px]">
+                <p className="px-2 font-light text-sm">Visual</p>
+              </div>
+            </div>
+            <div className="flex items-center">
+              <SiPython className="w-[30px] h-[30px] p-2 bg-[#4d82c8] text-[#d0d3d8]" />
+              <div className=" flex items-center bg-[#1f2328] h-[30px]">
+                <p className="px-2 font-light text-sm">{`${isNavbar === '/' ? 'hello' : isNavbar}.py`}</p>
+              </div>
+            </div>
+            <div className="flex items-center">
+              <DiGitBranch className="w-[20px] h-[20px] text-[#d0d3d8]/50" />
+              <div className=" flex items-center">
+                <p className="px-0.5 font-light text-xs">main</p>
+              </div>
+            </div>
           </div>
-          <div className="col-span-10 flex items-center justify-end ">
-            <a
-              href="https://github.com/renal-d"
-              className="flex items-center justify-center gap-1.5 pl-4 border-l border-[#1E2D3D] py-1.5 hover:text-white transition-colors pr-4"
+          <div className="flex items-center justify-end gap-x-2">
+            <p className="font-light text-sm">UTF-8</p>
+
+            <div
+              className="flex items-center bg-[#1f2328] h-[30px]"
               target="_blank"
               rel="noreferrer"
               aria-label="Follow me on github"
             >
-              <span>Renal-D</span>
-              <AiOutlineGithub className="text-xl" />
+              <p className="px-2 font-light text-sm">ruff_lsp</p>
+              <BsGearFill className="w-[30px] h-[30px] p-2 bg-[#69b373] text-[#d0d3d8]" />
+            </div>
+            <div
+              className="flex items-center bg-[#1f2328] h-[30px]"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Follow me on github"
+            >
+              <p className="px-2 font-light text-sm">renaldi-site</p>
+              <AiOutlineFolderOpen className="w-[30px] h-[30px] p-2 bg-[#cbced3] text-[#1f2328]" />
+            </div>
+            <a
+              className="flex items-center bg-[#1f2328] h-[30px] hover:text-white transition-colors group"
+              href="https://github.com/renal-d"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Follow me on github"
+            >
+              <p className="px-2 font-light text-sm">Renal-D</p>
+              <AiOutlineGithub className="w-[30px] h-[30px] p-2 bg-[#c296eb] text-[#d0d3d8] group-hover:text-white transition-colors" />
             </a>
           </div>
         </footer>

@@ -46,15 +46,15 @@ export default function Home() {
               Renaldi Dwi
             </h1>
 
-            <h2 className=" text-[#E99287] lg:text-3xl md:text-2xl text-xl flex items-center gap-3">
+            <h2 className=" text-[#FF3796] lg:text-3xl md:text-2xl text-xl flex items-center gap-3">
               <span className="animate-pulse">&#62;</span>
               <Typewriter
                 options={{
                   loop: true,
                   wrapperClassName:
-                    " text-[#E99287] lg:text-3xl md:text-2xl text-xl gap-3",
+                    " text-[#FF3796] lg:text-3xl md:text-2xl text-xl gap-3",
                   cursorClassName:
-                    " text-[#E99287] lg:text-3xl md:text-2xl text-xl gap-3",
+                    " text-[#FF3796] lg:text-3xl md:text-2xl text-xl gap-3",
                 }}
                 onInit={(typewriter) => {
                   typewriter
@@ -88,11 +88,11 @@ export default function Home() {
             </p>
             <p>
               {/* <span className="text-[#4D5BCE]">const</span>{" "} */}
-              <span className="text-[#43D9AD]">githubLink: str </span>{" "}
+              <span className="text-[#FF3796]">githubLink: str </span>{" "}
               <span className="text-white">=</span>{" "}
               <a
                 href="https://github.com/renal-d"
-                className="text-[#E99287]"
+                className="text-[#43D9AD]"
                 target="_blank"
                 rel="noreferrer"
               >

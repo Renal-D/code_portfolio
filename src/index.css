@@ -38,10 +38,6 @@ input[type="checkbox"]:hover {
   @apply text-[#607B96];
 }
 
-code .token {
-  @apply text-[#607B96] !important;
-}
-
 .efofCE {
   @apply bg-transparent p-0 !important;
 }

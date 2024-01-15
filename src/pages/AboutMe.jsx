@@ -7,10 +7,46 @@ import { SiMarkdown } from "@react-icons/all-files/si/SiMarkdown";
 import { VscCollapseAll } from "@react-icons/all-files/vsc/VscCollapseAll";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { CopyBlock, nord } from "react-code-blocks";
+import { CopyBlock } from "react-code-blocks";
 import gearData from "../data/GearData.json";
 import { IoLogoPython } from "@react-icons/all-files/io5/IoLogoPython";
 import { IoImageSharp } from "@react-icons/all-files/io5/IoImageSharp";
+const pinkMintTheme = {
+  lineNumberColor: "#999",
+  lineNumberBgColor: "#f0f0f0",
+  backgroundColor: "000000", // black
+  textColor: "#ffffff", // white
+  substringColor: "#FF3796", // pink
+  keywordColor: "#66d9ef", // blue
+  attributeColor: "#e6db74", // kuning
+  selectorAttributeColor: "#e6db74", // kuning
+  docTagColor: "#e6db74", // kuning
+  nameColor: "#f8f8f2", // white
+  builtInColor: "#FF3796", // hijau
+  literalColor: "#ae81ff", // purple
+  bulletColor: "#ae81ff", // purple
+  codeColor: "#FF3796", // hijau
+  additionColor: "#e6db74", // kuning
+  regexpColor: "#e6db74", // kuning
+  symbolColor: "#e6db74", // kuning
+  variableColor: "#FF3796", // pink
+  templateVariableColor: "#e6db74", // kuning
+  linkColor: "#ae81ff", // purple
+  selectorClassColor: "#e6db74", // kuning
+  typeColor: "#66d9ef", // blue
+  stringColor: "#43D9AD", // hijau
+  selectorIdColor: "#e6db74", // kuning
+  quoteColor: "#ae81ff", // purple
+  templateTagColor: "#43D9AD", // hijau
+  deletionColor: "#e6db74", // kuning
+  titleColor: "#66d9ef", // blue
+  sectionColor: "#66d9ef", // blue
+  commentColor: "#75715e", // gray
+  metaKeywordColor: "#66d9ef", // blue
+  metaColor: "#75715e", // gray
+  functionColor: "#66d9ef", // blue
+  numberColor: "#ae81ff", // purple
+};
 
 export default function AboutMe() {
   const [render, setRender] = useState("my-bio");
@@ -88,13 +124,13 @@ function MyBio({ closeBio }) {
       </div>
       <div className="overflow-y-auto scrollbar-thin h-full">
         <CopyBlock
-          language={`jsx`}
-          text={`
-name: str = 'Renaldi Dwi'
-location: str = 'Sidoarjo, Indonesia'
+          language={`python`}
+          text=
+          {`name: str = "Renaldi Dwi"
+location: str = "Sidoarjo, Indonesia"
 
 hobbies: list = [
-  "Coding"
+  "Coding",
   "Data-analysis", 
   "Esport", 
   "Basketball", 
@@ -102,7 +138,7 @@ hobbies: list = [
 ]
           `}
           showLineNumbers={true}
-          theme={nord}
+          theme={pinkMintTheme}
           codeBlock
         />
       </div>
@@ -134,7 +170,7 @@ function Skills({ closeSkills }) {
       </div>
       <div className="overflow-y-auto scrollbar-thin h-full">
         <CopyBlock
-          language={`jsx`}
+          language={`python`}
           text={`
 # Most important skills
   Programming & Data Analysis : list = [
@@ -154,7 +190,7 @@ function Skills({ closeSkills }) {
     ]
 `}
           showLineNumbers={true}
-          theme={nord}
+          theme={pinkMintTheme}
           codeBlock
         />
       </div>
@@ -187,7 +223,7 @@ function Journey({ closeJourney }) {
       </div>
       <div className="overflow-y-auto scrollbar-thin h-full">
         <CopyBlock
-          language={`jsx`}
+          language={`python`}
           text={`
 # Learning Information
   school : list = [
@@ -210,7 +246,7 @@ function Journey({ closeJourney }) {
   employer = '',
 `}
           showLineNumbers={true}
-          theme={nord}
+          theme={pinkMintTheme}
           codeBlock
         />
       </div>
