@@ -249,6 +249,9 @@ const Card = ({ data }) => {
                       <p className="text-white/80">
                         Project: {data.technology}
                       </p>
+                      <p className="text-white/80">
+                        Visibility: {data.visibleProject}
+                      </p>
                     </div>
                   </article>
                 </Dialog.Panel>

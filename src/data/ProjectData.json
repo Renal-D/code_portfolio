@@ -3,6 +3,7 @@
     "title": "Data Science Project: Games Sales",
     "description": "Mini-Project Revou mencari insight data penjualan game",
     "technology": "DataAnalysis", 
+    "visibleProject": "Public",
     "image": "https://res.cloudinary.com/dmmbiqyub/image/upload/v1701610904/aisyah_lohnnl.png",
     "link": "https://colab.research.google.com/drive/1bJs2AgRpDbEht_dkQCHfcDoa13DJsAnS?usp=sharing"
   },
@@ -10,6 +11,7 @@
     "title": "Prediksi juara MPL S13 dan MSC 2024",
     "description": "iseng iseng deh, akhirnya keterusan",
     "technology": "MachineLearning",
+    "visibleProject": "Public",
     "image": "https://res.cloudinary.com/dmmbiqyub/image/upload/v1701924642/quinnie_se4tbh.webp",
     "link": "https://console.cloud.google.com/bigquery?project=fluent-vortex-370904&ws=!1m5!1m4!4m3!1sfluent-vortex-370904!2sgame_sales!3sgames_clean&pli=1"
   },
@@ -17,6 +19,7 @@
     "title": "Ragam Potensi Kedungrejo",
     "description": "sisa sisa kemaren",
     "technology": "Design",
+    "visibleProject": "Public",
     "image": "https://res.cloudinary.com/dmmbiqyub/image/upload/v1701924645/tiffany_vv9nxh.webp",
     "link": "https://youtu.be/0C1kjmVzbsw"
   },
@@ -24,6 +27,7 @@
     "title": "Games Sales Excel",
     "description": "haha hihi huhu",
     "technology": "DataAnalysis",
+    "visibleProject": "Public",
     "image": "https://res.cloudinary.com/dmmbiqyub/image/upload/v1701924642/satine_ynuw4b.webp",
     "link": "https://drive.google.com/file/d/1vqwz_k9hu_Vats0mm1TEuuxF3v4ii3lL/view?usp=sharing"
   },
@@ -31,6 +35,7 @@
     "title": "Moon",
     "description": "Praesentac rhoncus tortor.",
     "technology": "Design",
+    "visibleProject": "Public",
     "image": "https://res.cloudinary.com/dmmbiqyub/image/upload/v1701924641/sunny_yn51np.webp",
     "link": "https://drive.google.com/file/d/1Y-h7nYkoN1_0DGtaq41r4KVk-QGj30nA/view?usp=sharing"
   },
@@ -38,6 +43,7 @@
     "title": "Lonely",
     "description": "Sendirian enakkk wkwk",
     "technology": "Design",
+    "visibleProject": "Public",
     "image": "https://res.cloudinary.com/dmmbiqyub/image/upload/v1701924641/carmine1_ukz1br.webp",
     "link": "https://drive.google.com/file/d/1-qZj-VTDyMrU4zG-qZ89e3Pby3TLErH8/view?usp=sharing"
   }

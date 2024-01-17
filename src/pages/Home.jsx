@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
+import { AnimatedName } from "../components/animated-name";
 
 export default function Home() {
 
@@ -41,12 +42,10 @@ export default function Home() {
       <div className="flex items-center justify-center h-full max-w-7xl mx-auto">
         <div className="lg:w-1/2 w-full mx-10 lg:ml-10 flex flex-col justify-between h-[80%] lg:h-auto">
           <div className="mb-20">
-            <p className="text-white text-lg">Hewloo all👋. I am</p>
-            <h1 className="text-white lg:text-6xl md:text-5xl text-5xl">
-              Renaldi Dwi
-            </h1>
+            <p className="text-white text-lg gap-3">Hewloo all👋. I am</p>
+            <AnimatedName />
 
-            <h2 className=" text-[#FF3796] lg:text-3xl md:text-2xl text-xl flex items-center gap-3">
+            <h2 className=" text-[#FF3796] lg:text-3xl md:text-2xl text-xl flex items-center gap-4">
               <span className="animate-pulse">&#62;</span>
               <Typewriter
                 options={{
