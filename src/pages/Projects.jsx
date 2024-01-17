@@ -241,7 +241,7 @@ const Card = ({ data }) => {
                             }}
                             transition={{ type: "spring", stiffness: 400, damping: 10 }}
                         >
-                            more-info 
+                            view-project 
                           </motion.button> 
                         </a>
                       )}
