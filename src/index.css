@@ -2,9 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'GeistMono';
+  src: url('https://vercel.com/font/mono') format('woff2'); /* Ganti URL_FONT_VERCEL dengan URL sebenarnya */
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
-  font-family: "Fira Code", monospace;
+  font-family: "GeistMono", monospace;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
