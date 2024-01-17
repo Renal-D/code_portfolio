@@ -91,7 +91,7 @@ export default function Home() {
               <span className="text-white">=</span>{" "}
               <a
                 href="https://github.com/renal-d"
-                className="text-[#43D9AD]"
+                className="text-[#43D9AD] hover:underline"
                 target="_blank"
                 rel="noreferrer"
               >

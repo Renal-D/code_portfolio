@@ -1,13 +1,10 @@
 import emailjs from "@emailjs/browser";
 import { Popover, Transition } from "@headlessui/react";
 import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
-import { FiInstagram } from "@react-icons/all-files/fi/FiInstagram";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
-import { GrLinkedinOption } from "@react-icons/all-files/gr/GrLinkedinOption";
-import { HiExternalLink } from "@react-icons/all-files/hi/HiExternalLink";
+import { BsWhatsapp, BsInstagram, BsLinkedin, BsTiktok } from 'react-icons/bs'
 import { ImSteam } from "@react-icons/all-files/im/ImSteam";
-import { MdCall } from "@react-icons/all-files/md/MdCall";
-import { MdEmail } from "@react-icons/all-files/md/MdEmail";
+import { FaRegEnvelope } from "@react-icons/all-files/fa/FaRegEnvelope";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { CopyBlock } from "react-code-blocks";
@@ -108,7 +105,6 @@ export default function ContactMe() {
         <div className="lg:col-span-2 md:col-span-4 col-span-full">
           <div className="border-r  border-[#1E2D3D] text-white gap-2.5 relative overflow-hidden h-full">
             <Contacts />
-            <FindMeAlso />
           </div>
         </div>
         <div className="lg:col-span-10 md:col-span-8 col-span-full ">
@@ -257,94 +253,55 @@ function Contacts() {
         >
           <Popover.Panel className="p-4 w-full flex flex-col gap-1.5">
             <a
-              href="https://instagram.com/renaldii06/"
-              className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
+              href="mailto:renaldi31saputra@gmail.com"
+              className="text-[#607B96] hover:text-white hover:bg-[#0F0F0F]/10 inline-flex items-center gap-2.5 transition-colors"
+            >
+              <FaRegEnvelope />
+              <span>Email</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/renaldidwi/"
+              className="text-[#607B96] hover:text-white hover:bg-[#0F0F0F]/10 inline-flex items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >
-              <FiInstagram />
-              <span>renaldii06</span>
+              <BsLinkedin />
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://instagram.com/renaldii06/"
+              className="text-[#607B96] hover:text-white hover:bg-[#0F0F0F]/10 inline-flex items-center gap-2.5 transition-colors"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsInstagram />
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://wa.me/6289619568656"
+              className="text-[#607B96] hover:text-white hover:bg-[#0F0F0F]/10 inline-flex items-center gap-2.5 transition-colors"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsWhatsapp />
+              <span>Whatsapp</span>
             </a>
             <a
               href="https://steamcommunity.com/id/renal-d/"
-              className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
+              className="text-[#607B96] hover:text-white hover:bg-[#0F0F0F]/10 inline-flex items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >
               <ImSteam />
-              <span>renmaruu</span>
+              <span>Steam</span>
             </a>
-            <a
-              href="https://wa.me/6289619568656"
-              className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <MdCall />
-              <span>+6289619568656</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/renaldidwi/"
-              className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GrLinkedinOption />
-              <span>Renaldi Dwi</span>
-            </a>
-            <a
-              href="mailto:renaldi31saputra@gmail.com"
-              className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
-            >
-              <MdEmail />
-              <span>renaldi31saputra@gmail.com</span>
-            </a>
-          </Popover.Panel>
-        </Transition>
-      </>
-    </Popover>
-  );
-}
-
-function FindMeAlso() {
-  const [isOpen, setIsOpen] = useState(true);
-
-  function openModal() {
-    setIsOpen(!isOpen);
-  }
-
-  return (
-    <Popover>
-      <>
-        <Popover.Button
-          className={`
-                ${isOpen ? "text-white" : "text-white/50 "}
-               flex items-center gap-2.5 border-b border-[#1E2D3D] py-2.5 px-4 w-full border-t`}
-          onClick={openModal}
-        >
-          <GoTriangleDown
-            className={`${isOpen ? "" : "-rotate-90"} transition-all`}
-          />
-          <span>find-me-also</span>
-        </Popover.Button>
-
-        <Transition
-          show={isOpen}
-          enter="transition ease-out duration-200"
-          enterFrom="opacity-0 -translate-y-1"
-          enterTo="opacity-100 translate-y-0"
-          leave="transition ease-linear duration-150"
-          leaveFrom="opacity-100 translate-y-0"
-          leaveTo="opacity-0 -translate-y-1"
-        >
-          <Popover.Panel className="p-4 w-full flex flex-col gap-1">
             <a
               href="https://www.tiktok.com/@renmaruuqt"
-              className="text-[#607B96] hover:text-white inline-flex items-center gap-2.5 transition-colors"
+              className="text-[#607B96] hover:text-white hover:bg-[#0F0F0F]/10 inline-flex items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >
-              <HiExternalLink />
+              <BsTiktok />
               <span>Tiktok</span>
             </a>
           </Popover.Panel>

@@ -1,5 +1,5 @@
 import { Dialog, Transition } from "@headlessui/react";
-import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
+import { HiTerminal } from "@react-icons/all-files/hi/HiTerminal";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { GiArtificialIntelligence } from "@react-icons/all-files/gi/GiArtificialIntelligence";
 import { DiPhotoshop } from "@react-icons/all-files/di/DiPhotoshop";
@@ -52,7 +52,7 @@ export default function Projects() {
                 }`}
                 onClick={() => setFilter("all")}
               >
-                <BsFiles />
+                <HiTerminal />
                 <span>All Projects</span>
               </button>
             </div>
