@@ -9,14 +9,14 @@
           "type": ["computer", "Hewlett Packard"]
         },
         {
-          "item": "Keychron K2",
-          "desc": "A low profile mechanical keyboard with brown gateron switches.",
+          "item": "Ajazz AK820",
+          "desc": "A low profile mechanical keyboard with ajazz yellow switches.",
           "type": ["keyboard"]
         },
         {
-          "item": "Rexus Daxa",
+          "item": "Vortexseries Inno X1",
           "desc": "Just a regular mouse with a gaming gimmick that fit in my palm.",
-          "type": ["mouse", "Daxa"]
+          "type": ["mouse", "Vortexseries"]
         }
       ]
     },
@@ -25,7 +25,7 @@
       "gearList": [
         {
           "item": "AOC Q32G3S",
-          "desc": "My main monitor that big enough to fill my desk, this one is 24\" but it's curved, idk why i bought this.",
+          "desc": "My main monitor that big enough to fill my desk, this one is 32\", idk why i bought this.",
           "type": ["monitor", "external display"]
         }
       ]
@@ -34,14 +34,9 @@
       "gear": "Hardware / Audio",
       "gearList": [
         {
-          "item": "Steelseries Arctis 7",
-          "desc": "Pretty awesome headphones. I used the Arctis 5 before, this is just a nice upgrade. No more cables. uh I forget the chat mix feature is awesome!",
-          "type": ["headphone"]
-        },
-        {
-          "item": "Gamen Pro",
-          "desc": "I switch between my Buds and my Arctis 7. I used Buds more often when am outside or in my office. I love the noise cancelling support and you can connect 2 bluetooth sources at the same time.",
-          "type": ["headset", "earphone"]
+          "item": "KZ EDX Pro",
+          "desc": "Pretty awesome In-Ear Monitor Headset.",
+          "type": ["headset", "in-ear monitor"]
         }
       ]
     },
@@ -56,12 +51,7 @@
         {
           "item": "GIT",
           "desc": "A BLAZINGLY FAST text editor that i use when am on the terminal.",
-          "type": ["editor"]
-        },
-        {
-          "item": "Photoshop",
-          "desc": "my software editing photos",
-          "type": ["terminal"]
+          "type": ["editor", "terminal"]
         },
         {
           "item": "PowerToys",
@@ -75,11 +65,20 @@
       "gearList": [
         {
           "item": "Vercel",
-          "desc": "Formerly known as Now from Zeit. This is a very nice platform to directly deploy all my Next.js apps."
+          "desc": "This is a very nice platform to directly deploy all my Next.js apps for my personal website."
         },
         {
           "item": "GitHub",
-          "desc": "This is a very nice platform to directly deploy all my HTML"
+          "desc": "This is a very nice platform to directly deploy all my projects"
+        }
+      ]
+    },
+    {
+      "gear": "Operating System",
+      "gearList": [
+        {
+          "item": "Windows 11",
+          "desc": "This is a very nice OS. Im use for coding, analysis and gaming"
         }
       ]
     }

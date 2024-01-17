@@ -247,7 +247,7 @@ const Card = ({ data }) => {
                       )}
 
                       <p className="text-white/80">
-                        Tech Stack: {data.technology}
+                        Project: {data.technology}
                       </p>
                     </div>
                   </article>

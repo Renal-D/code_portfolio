@@ -131,9 +131,10 @@ location: str = "Sidoarjo, Indonesia"
 
 hobbies: list = [
   "Coding",
-  "Data-analysis", 
-  "Esport", 
+  "Data-analysis",  
   "Basketball", 
+  "Music", 
+  "Esport",
   "More Gaming...", 
 ]
           `}
@@ -171,20 +172,26 @@ function Skills({ closeSkills }) {
       <div className="overflow-y-auto scrollbar-thin h-full">
         <CopyBlock
           language={`python`}
-          text={`
-# Most important skills
-  Programming & Data Analysis: list = [
-    "SQL = beginner",
-    "Python = beginner",
-    "Excel = intermediate",
-    "Tableau = intermediate",
-    "PowerBI = intermediate",
-    "PowerPoint = intermediate",
-    ]
-  Editing: list = [
-    "Photoshop = intermediate",
-    "Premiere Pro = intermediate",
-    "CorelDraw = beginner", 
+          text={`# Most important skills
+  programming_and_data-analysis: dict = {
+    "SQL" : "beginner",
+    "Python" : "beginner",
+    "Excel" : "intermediate",
+    "Tableau" : "intermediate",
+    "PowerBI" : "beginner",
+    "PowerPoint" : "intermediate",
+  }
+  editing: dict = {
+    "Photoshop" : "intermediate",
+    "Premiere Pro" : "beginner",
+    "CorelDraw" : "beginner", 
+    "Capcut" : "intermediate", 
+
+  favorite_libs: list = [
+    "Matplotlib",
+    "Seaborn",  
+    "Scikit-Learn", 
+]
 
 # am still learning this...
     ]
@@ -224,26 +231,26 @@ function Journey({ closeJourney }) {
       <div className="overflow-y-auto scrollbar-thin h-full">
         <CopyBlock
           language={`python`}
-          text={`
-# Learning Information
-  school: list = [
-    "SMAN 1 Kawedanan = IPA",
-    "Universitas Negeri Malang = Physics",
-  ]
-  course: list = [
-    "RevoU = Mini-Course Data Analytics",
-    "Binar Academy x Digitalent Kominfo = Data Science",
-  ]
+          text={`# Learning Information
+  school: dict = {
+    "SMAN 1 Kawedanan" : "IPA",
+    "Universitas Negeri Malang" : "Physics",
+  }
+  course: dict = {
+    "RevoU" : "Mini-Course Data Analytics",
+    "Binar Academy x Digitalent Kominfo" : "Data Science",
+  }
 
 # Organization Information
-  organization: list = [
-    "SMAN 1 Kawedanan = Pramuka",
-    "SMAN 1 Kawedanan = Basketball",
-    "Universitas Negeri Malang = Komite Olahraga FMIPA",
+  organization: dict = {
+    "SMAN 1 Kawedanan" : "Pramuka",
+    "SMAN 1 Kawedanan" : "Basketball",
+    "Universitas Negeri Malang" : "Komite Olahraga FMIPA",
+  }
 
 # Work Information
-  profession: str = 'Job Seeker',
-  employer: str = '',
+  profession: str = "Job Seeker",
+  employer: str = "",
 `}
           showLineNumbers={true}
           theme={pinkMintTheme}

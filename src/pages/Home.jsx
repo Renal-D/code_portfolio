@@ -41,7 +41,7 @@ export default function Home() {
       <div className="flex items-center justify-center h-full max-w-7xl mx-auto">
         <div className="lg:w-1/2 w-full mx-10 lg:ml-10 flex flex-col justify-between h-[80%] lg:h-auto">
           <div className="mb-20">
-            <p className="text-white text-lg">Hi all👋. I am</p>
+            <p className="text-white text-lg">Hewloo all👋. I am</p>
             <h1 className="text-white lg:text-6xl md:text-5xl text-5xl">
               Renaldi Dwi
             </h1>
@@ -61,7 +61,7 @@ export default function Home() {
                     .typeString("data-scientist_")
                     .pauseFor(1000)
                     .deleteAll()
-                    .typeString("love-about-ai-&-ml_")
+                    .typeString("love-about-ai/ml_")
                     .pauseFor(500)
                     .deleteAll()
                     .typeString("esport-enthusiast_")
