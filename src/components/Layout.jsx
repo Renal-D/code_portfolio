@@ -47,7 +47,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
     >
       <div className="custom-size bg-[#0F0F0F]/[90%] backdrop-blur-md rounded-lg border border-[#3D3B40] flex justify-between flex-col overflow-hidden">
         <header className="grid grid-cols-12  text-[#607B96] border-b border-[#3D3B40] items-center">
-          <div className="lg:col-span-2 col-span-11 lg:border-r border-[#3D3B40] py-4 pl-4">
+          <div className="lg:col-span-2 col-span-11 lg:border-r text-lg border-[#3D3B40] py-4 pl-4">
             <span>Renaldi Dwi</span>
           </div>
 
@@ -56,7 +56,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
             <nav className="flex justify-between items-center">
               <div>
                 <button
-                  className={`px-5 py-4 border-r border-r-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
+                  className={`px-5 py-4 text-lg border-r border-r-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
                     isNavbar === "/"
                       ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-transparent"
@@ -68,7 +68,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   _hello
                 </button>
                 <button
-                  className={`px-5 py-4 border-r border-r-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
+                  className={`px-5 py-4 border-r text-lg border-r-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
                     isNavbar === "about-me"
                       ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-transparent"
@@ -80,7 +80,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   _about-me
                 </button>
                 <button
-                  className={`px-5 py-4 border-r border-r-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
+                  className={`px-5 py-4 border-r text-lg border-r-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
                     isNavbar === "projects"
                       ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-transparent"
@@ -92,7 +92,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
                   _projects
                 </button>
                 <button
-                  className={`px-5 py-4 border-r border-r-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
+                  className={`px-5 py-4 border-r text-lg border-r-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
                     isNavbar === "article"
                       ? "border-b-2 border-[#FF3796] text-white"
                       : "border-b-transparent"
@@ -107,7 +107,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
 
               <button
                 id="border-b"
-                className={`px-5 py-4 border-l border-l-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
+                className={`px-5 py-4 border-l text-lg border-l-[#3D3B40] border-b-2 h-full transition-all hover:text-white ${
                   isNavbar === "contact-me"
                     ? "border-b-2 border-[#FF3796] text-white"
                     : "border-b-transparent"
@@ -275,10 +275,11 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
               </div>
             </div>
             <div className="flex items-center">
-              <DiGitBranch className="w-[20px] h-[20px] text-[#d0d3d8]/50" />
-              <div className=" flex items-center">
-                <p className="px-0.5 font-light text-xs">main</p>
-              </div>
+              <a href="Home"
+              className="flex items-center hover:text-white transition-colors group">
+              <DiGitBranch className="w-[20px] h-[20px] text-[#d0d3d8]/50 group-hover:text-white transition-colors" />
+                <p className="px-0.5 font-light text-sm">main</p>
+              </a>
             </div>
           </div>
           <div className="flex items-center justify-end gap-x-2">

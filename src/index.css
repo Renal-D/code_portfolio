@@ -4,7 +4,7 @@
 @tailwind utilities;
 @font-face {
   font-family: 'GeistMono';
-  src: url('https://vercel.com/font/mono') format('woff2'); /* Ganti URL_FONT_VERCEL dengan URL sebenarnya */
+  src: url('https://vercel.com/font/mono') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
