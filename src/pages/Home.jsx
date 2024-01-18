@@ -104,7 +104,7 @@ export default function Home() {
 
         <div className="w-1/2 overflow-hidden max-h-[90%] hidden lg:block mr-5">
         <div className="w-3/4 flex flex-col items-center justify-center">
-        <img src="https://res.cloudinary.com/dmmbiqyub/image/upload/v1701925071/livii_fwdeuh.webp" className="image w-3/4" alt="renal-d" />
+        <img src="https://res.cloudinary.com/dmmbiqyub/image/upload/v1705539433/perfil_kduowf.png" className="image w-3/4" alt="renal-d" />
         </div>
       </div>
       </div>

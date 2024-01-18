@@ -43,11 +43,11 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
   return (
     <div
       className="h-screen flex bg-[#15010d] items-center justify-center bg-no-repeat bg-cover bg-center"
-      style={{ backgroundImage: `url("https://res.cloudinary.com/dmmbiqyub/image/upload/v1705356138/thumb-1920-1081933_znjzb3.jpg")` }}
+      style={{ backgroundImage: `url("https://res.cloudinary.com/dmmbiqyub/image/upload/v1705571195/Screenshot_2023-12-07_181833_wnax5s.png")` }}
     >
       <div className="custom-size bg-[#0F0F0F]/[90%] backdrop-blur-md rounded-lg border border-[#3D3B40] flex justify-between flex-col overflow-hidden">
         <header className="grid grid-cols-12  text-[#607B96] border-b border-[#3D3B40] items-center">
-          <div className="lg:col-span-2 col-span-11 lg:border-r text-lg border-[#3D3B40] py-4 pl-4">
+          <div className="lg:col-span-2 col-span-11 lg:border-r text-lg text-[#ffffff] border-[#3D3B40] py-4 pl-4">
             <span>Renaldi Dwi</span>
           </div>
 
