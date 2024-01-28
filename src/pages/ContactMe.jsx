@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { Popover, Transition } from "@headlessui/react";
-import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
+// import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { BsWhatsapp, BsInstagram, BsLinkedin, BsTiktok } from 'react-icons/bs'
 import { ImSteam } from "@react-icons/all-files/im/ImSteam";
@@ -13,20 +13,20 @@ const pinkMintTheme = {
   lineNumberBgColor: "#f0f0f0",
   backgroundColor: "000000", // black
   textColor: "#ffffff", // white
-  substringColor: "#FF3796", // pink
+  substringColor: "#FD4454", // pink
   keywordColor: "#66d9ef", // blue
   attributeColor: "#e6db74", // kuning
   selectorAttributeColor: "#e6db74", // kuning
   docTagColor: "#e6db74", // kuning
   nameColor: "#f8f8f2", // white
-  builtInColor: "#FF3796", // hijau
+  builtInColor: "#FD4454", // pink
   literalColor: "#ae81ff", // purple
   bulletColor: "#ae81ff", // purple
-  codeColor: "#FF3796", // hijau
+  codeColor: "#FD4454", // pink
   additionColor: "#e6db74", // kuning
   regexpColor: "#e6db74", // kuning
   symbolColor: "#e6db74", // kuning
-  variableColor: "#FF3796", // pink
+  variableColor: "#FD4454", // pink
   templateVariableColor: "#e6db74", // kuning
   linkColor: "#ae81ff", // purple
   selectorClassColor: "#e6db74", // kuning
@@ -103,35 +103,35 @@ export default function ContactMe() {
     >
       <div className="grid grid-cols-12 md:h-full">
         <div className="lg:col-span-2 md:col-span-4 col-span-full">
-          <div className="border-r  border-[#1E2D3D] text-white gap-2.5 relative overflow-hidden h-full">
+          <div className="border-r  border-[#585858] text-white gap-2.5 relative overflow-hidden h-full">
             <Contacts />
           </div>
         </div>
         <div className="lg:col-span-10 md:col-span-8 col-span-full ">
           <div className="w-full h-[95%]">
-            <div className="grid grid-cols-12 border-b border-t md:border-t-0 border-[#1E2D3D]">
-              <div className="lg:col-span-2 md:col-span-4 col-span-5 text-white border-r border-[#1E2D3D] py-2.5 relative px-4">
+            {/* <div className="grid grid-cols-12 border-b border-t md:border-t-0 border-[#585858]">
+              <div className="lg:col-span-2 md:col-span-4 col-span-5 text-white border-r border-[#585858] py-2.5 relative px-4">
                 <button className="absolute top-1/2 -translate-y-1/2 right-4">
                   <AiOutlineClose />
                 </button>
                 <p className="truncate pr-5">contact-me</p>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex items-center justify-items-center overflow-hidden h-full">
-              <div className="lg:w-1/2 w-full flex items-center justify-center lg:border-r border-[#1E2D3D] overflow-y-auto scrollbar-thin h-full">
+              <div className="lg:w-1/2 w-full flex items-center justify-center lg:border-r border-[#585858] overflow-y-auto scrollbar-thin h-full">
                 <form
                   onSubmit={sendEmail}
                   ref={formRef}
-                  className="text-[#607B96] md:w-[85%] w-[90%] flex flex-col gap-6 relative"
+                  className="text-[#607B96] md:w-[80%] w-[90%] flex flex-col gap-6 relative"
                 >
-                  <div className="flex flex-col gap-1.5">
+                  <div className="flex flex-col gap-2.5">
                     <label htmlFor="form_name">_name:</label>
                     <input
                       name="form_name"
                       type="text"
                       placeholder="Your Name"
-                      className="bg-[#011221] rounded-lg border-[#1E2D3D] focus:ring-[#607B96] focus:border-[#607B96]/30 text-white placeholder:text-[#465E77]"
+                      className="bg-[#011221]/60 rounded-lg border-[#585858] focus:ring-[#607B96] focus:border-[#607B96]/30 text-white placeholder:text-[#465E77] p-1.5"
                       autoComplete="off"
                       required
                       onChange={(e) => {
@@ -139,13 +139,13 @@ export default function ContactMe() {
                       }}
                     />
                   </div>
-                  <div className="flex flex-col gap-1.5">
+                  <div className="flex flex-col gap-2">
                     <label htmlFor="email">_email:</label>
                     <input
                       name="email"
                       type="email"
                       placeholder="your_email@gmail.com"
-                      className="bg-[#011221] rounded-lg border-[#1E2D3D]  focus:ring-[#607B96] focus:border-[#607B96]/30 text-white placeholder:text-[#465E77]"
+                      className=" bg-[#011221]/60  rounded-lg border-[#585858] focus:ring-[#607B96] focus:border-[#607B96]/30 text-white placeholder:text-[#465E77] p-1.5"
                       autoComplete="off"
                       required
                       onChange={(e) => {
@@ -158,7 +158,7 @@ export default function ContactMe() {
                     <textarea
                       name="message"
                       rows="4"
-                      className="bg-[#011221] rounded-lg border-[#1E2D3D]  focus:ring-[#607B96] focus:border-[#607B96]/30 text-white placeholder:text-[#465E77]"
+                      className="bg-[#011221]/60  rounded-lg border-[#585858]  focus:ring-[#607B96] focus:border-[#607B96]/30 text-white placeholder:text-[#465E77]"
                       placeholder="Hey! Hire Me Please!"
                       autoComplete="off"
                       required
@@ -167,11 +167,11 @@ export default function ContactMe() {
                       }}
                     />
                   </div>
-                  <button
+                  <motion.button
                     className={`text-white py-[10px] px-[14px] rounded-lg bg-[#1C2B3A] w-max  hover:shadow-sm hover:shadow-[#607B96] transition-all flex items-end gap-2`}
                     type="submit"
                     value="send"
-                    whileHover={{scale: "1.03", boxShadow: "0px 0px 8px rgba(255,255,255)"}}
+                    whileHover={{scale: "1.01", boxShadow: "0px 0px 8px rgba(255,255,255)"}}
                     transition={{type: "spring", stiffness:"300"}}
                   >
                     <span>submit-message</span>
@@ -184,7 +184,7 @@ export default function ContactMe() {
                       <span className="w-[5px] h-[5px] rounded-full bg-white animate-bounce"></span>
                       <span className="w-[5px] h-[5px] rounded-full bg-white animate-bounce"></span>
                     </div>
-                  </button>
+                  </motion.button>
                   {showNotif ? (
                     <p className="animate-pulse absolute -bottom-10 toast">
                       _your email have been sent!
@@ -233,7 +233,7 @@ function Contacts() {
         <Popover.Button
           className={`
                 ${isOpen ? "text-white " : "text-white/50 border-b-0"}
-               flex items-center gap-2.5  border-b border-[#1E2D3D] py-2.5 px-4 w-full`}
+               flex items-center gap-2.5  border-b border-[#585858] py-2.5 px-4 w-full`}
           onClick={openPopover}
         >
           <GoTriangleDown
@@ -251,17 +251,17 @@ function Contacts() {
           leaveFrom="opacity-100 translate-y-0"
           leaveTo="opacity-0 -translate-y-1"
         >
-          <Popover.Panel className="p-4 w-full flex flex-col gap-1.5">
+          <Popover.Panel className="py-4 w-full flex flex-col">
             <a
               href="mailto:renaldi31saputra@gmail.com"
-              className="text-[#607B96] hover:text-white hover:bg-[#0F0F0F]/10 inline-flex items-center gap-2.5 transition-colors"
+              className="text-[#607B96] hover:text-white hover:bg-[#f5f5f5]/20 inline-flex px-7 py-1 items-center gap-2.5 transition-colors"
             >
               <FaRegEnvelope />
               <span>Email</span>
             </a>
             <a
               href="https://www.linkedin.com/in/renaldidwi/"
-              className="text-[#607B96] hover:text-white hover:bg-[#0F0F0F]/10 inline-flex items-center gap-2.5 transition-colors"
+              className="text-[#607B96] hover:text-white hover:bg-[#f5f5f5]/20 inline-flex px-7 py-0.5 items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >
@@ -270,7 +270,7 @@ function Contacts() {
             </a>
             <a
               href="https://instagram.com/renaldii06/"
-              className="text-[#607B96] hover:text-white hover:bg-[#0F0F0F]/10 inline-flex items-center gap-2.5 transition-colors"
+              className="text-[#607B96] hover:text-white hover:bg-[#f5f5f5]/20 inline-flex px-7 py-0.5 items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >
@@ -279,7 +279,7 @@ function Contacts() {
             </a>
             <a
               href="https://wa.me/6289619568656"
-              className="text-[#607B96] hover:text-white hover:bg-[#0F0F0F]/10 inline-flex items-center gap-2.5 transition-colors"
+              className="text-[#607B96] hover:text-white hover:bg-[#f5f5f5]/20 inline-flex px-7 py-0.5 items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >
@@ -288,7 +288,7 @@ function Contacts() {
             </a>
             <a
               href="https://steamcommunity.com/id/renal-d/"
-              className="text-[#607B96] hover:text-white hover:bg-[#0F0F0F]/10 inline-flex items-center gap-2.5 transition-colors"
+              className="text-[#607B96] hover:text-white hover:bg-[#f5f5f5]/20 inline-flex px-7 py-0.5 items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >
@@ -297,7 +297,7 @@ function Contacts() {
             </a>
             <a
               href="https://www.tiktok.com/@renmaruuqt"
-              className="text-[#607B96] hover:text-white hover:bg-[#0F0F0F]/10 inline-flex items-center gap-2.5 transition-colors"
+              className="text-[#607B96] hover:text-white hover:bg-[#f5f5f5]/20 inline-flex px-7 py-0.5 items-center gap-2.5 transition-colors"
               target="_blank"
               rel="noreferrer"
             >

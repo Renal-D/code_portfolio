@@ -20,7 +20,7 @@ export default function Projects() {
     >
       <div className="grid grid-cols-12">
         <button
-          className="md:col-span-3 lg:col-span-2 col-span-full md:border-r border-b border-[#3D3B40] text-white flex gap-2.5 items-center py-2.5 pl-4"
+          className="md:col-span-3 lg:col-span-2 col-span-full md:border-r border-b border-[#585858] text-white flex gap-2.5 items-center py-2.5 pl-4"
           onClick={() => setProject(!project)}
         >
           <GoTriangleDown
@@ -28,13 +28,13 @@ export default function Projects() {
           />
           <span>projects</span>
         </button>
-        <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#3D3B40] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
+        <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#585858] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
           {filter} projects
         </div>
       </div>
 
-      <div className="grid grid-cols-12 h-full ">
-        <div className="lg:col-span-2 col-span-full md:col-span-3 md:border-r border-[#3D3B40] px-0 md:px-5 md:py-4 py-0 flex flex-col gap-4 overflow-hidden">
+      <div className="grid grid-cols-12 h-full">
+        <div className="lg:col-span-2 col-span-full md:col-span-3 md:border-r border-[#585858] px-0 md:py-4 py-0 flex flex-col gap-4 overflow-hidden">
           <Transition
             show={project}
             enter="transition ease-in duration-200"
@@ -43,12 +43,12 @@ export default function Projects() {
             leave="transition ease-out duration-150"
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 -translate-y-1"
-            className="flex flex-col gap-4 overflow-hidden absolute md:static z-10 top-[6rem] md:top-0 py-2.5 md:py-0 px-4 md:px-0 w-full md:w-auto left-0 bg-[#011627] md:bg-transparent"
+            className="flex flex-col overflow-hidden absolute md:static z-10 top-[6rem] md:top-0 py-2.5 md:py-0 px-4 md:px-0 w-full md:w-auto left-0 bg-[#011627] md:bg-transparent"
           >
-            <div className="flex items-center gap-6 ">
+            <div className="flex items-center gap-6">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full text-left ${
-                  filter === "all" ? "text-white" : "text-[#607B96]"
+                className={`flex items-center px-7 py-1 gap-2.5 cursor-pointer transition-colors hover:text-white w-full text-left ${
+                  filter === "all" ? "text-white bg-[#f5f5f5]/20" : "text-[#607B96] hover:bg-[#f5f5f5]/20"
                 }`}
                 onClick={() => setFilter("all")}
               >
@@ -56,10 +56,10 @@ export default function Projects() {
                 <span>All Projects</span>
               </button>
             </div>
-            <div className="flex items-center gap-6 ">
+            <div className="flex items-center gap-6">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "DataAnalysis" ? "text-white" : "text-[#607B96]"
+                className={`flex items-center px-7 py-1 gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "DataAnalysis" ? "text-white bg-[#f5f5f5]/20" : "text-[#607B96] hover:bg-[#f5f5f5]/20"
                 }`}
                 onClick={() => setFilter("DataAnalysis")}
               >
@@ -67,21 +67,21 @@ export default function Projects() {
                 <span>Data Analysis</span> 
               </button>
             </div>
-            <div className="flex items-center gap-6 ">
+            <div className="flex items-center gap-6">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "MachineLearning" ? "text-white" : "text-[#607B96]"
+                className={`flex items-center px-7 py-1 gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "ML/AI" ? "text-white bg-[#f5f5f5]/20" : "text-[#607B96] hover:bg-[#f5f5f5]/20"
                 }`}
-                onClick={() => setFilter("MachineLearning")} 
+                onClick={() => setFilter("ML/AI")} 
               >
                 <GiArtificialIntelligence />
-                <span>Machine Learning</span> 
+                <span>ML/AI</span> 
               </button>
             </div>
             <div className="flex items-center gap-6">
               <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "Design" ? "text-white" : "text-[#607B96]"
+                className={`flex items-center px-7 py-1 gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                  filter === "Design" ? "text-white bg-[#f5f5f5]/20" : "text-[#607B96] hover:bg-[#f5f5f5]/20"
                 }`}
                 onClick={() => setFilter("Design")}
               >
@@ -136,7 +136,7 @@ const Card = ({ data }) => {
   return (
     <>
       <motion.div
-        className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col overflow-hidden hover:shadow-sm hover:shadow-[#607B96] transition-colors h-[400px]"
+        className="rounded-2xl border border-[#585858] bg-[#001221]/50 flex items-center flex-col overflow-hidden hover:shadow-sm hover:shadow-[#607B96] transition-colors h-[400px]"
         whileHover={{ scale:1.03, boxShadow: "0px 0px 8px rgba(255,255,255)" }}
         transition={{ type: "spring", stiffness:400, damping:10 }}
       >

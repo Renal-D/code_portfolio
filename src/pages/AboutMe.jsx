@@ -1,35 +1,35 @@
 import { Popover, Transition } from "@headlessui/react";
 import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
-import { HiChevronRight } from "@react-icons/all-files/hi/HiChevronRight";
-import { RiFolder3Fill } from "@react-icons/all-files/ri/RiFolder3Fill";
+// import { HiChevronRight } from "@react-icons/all-files/hi/HiChevronRight";
+// import { RiFolder3Fill } from "@react-icons/all-files/ri/RiFolder3Fill";
 import { SiMarkdown } from "@react-icons/all-files/si/SiMarkdown";
-import { VscCollapseAll } from "@react-icons/all-files/vsc/VscCollapseAll";
+// import { VscCollapseAll } from "@react-icons/all-files/vsc/VscCollapseAll";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { CopyBlock } from "react-code-blocks";
 import gearData from "../data/GearData.json";
 import { IoLogoPython } from "@react-icons/all-files/io5/IoLogoPython";
-import { IoImageSharp } from "@react-icons/all-files/io5/IoImageSharp";
+// import { IoImageSharp } from "@react-icons/all-files/io5/IoImageSharp";
 const pinkMintTheme = {
   lineNumberColor: "#999",
   lineNumberBgColor: "#f0f0f0",
   backgroundColor: "000000", // black
   textColor: "#ffffff", // white
-  substringColor: "#FF3796", // pink
+  substringColor: "#FD4454", // pink
   keywordColor: "#66d9ef", // blue
   attributeColor: "#e6db74", // kuning
   selectorAttributeColor: "#e6db74", // kuning
   docTagColor: "#e6db74", // kuning
   nameColor: "#f8f8f2", // white
-  builtInColor: "#FF3796", // hijau
+  builtInColor: "#FD4454", // pink
   literalColor: "#ae81ff", // purple
   bulletColor: "#ae81ff", // purple
-  codeColor: "#FF3796", // hijau
+  codeColor: "#FD4454", // pink
   additionColor: "#e6db74", // kuning
   regexpColor: "#e6db74", // kuning
   symbolColor: "#e6db74", // kuning
-  variableColor: "#FF3796", // pink
+  variableColor: "#FD4454", // pink
   templateVariableColor: "#e6db74", // kuning
   linkColor: "#ae81ff", // purple
   selectorClassColor: "#e6db74", // kuning
@@ -62,8 +62,6 @@ export default function AboutMe() {
       return <Gear closeGear={setRender} />;
     } else if (value === "journey") {
       return <Journey closeJourney={setRender} />;
-    } else if (value === "images") {
-      return <Images closeImages={setRender} />;
     }
   }
 
@@ -74,9 +72,9 @@ export default function AboutMe() {
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: -50, opacity: 0 }}
     >
-      <div className="lg:grid grid-cols-12 h-full flex flex-col ">
+      <div className="lg:grid grid-cols-12 h-full flex flex-col">
         <div className="col-span-2 grid lg:grid-cols-6">
-          <div className="col-span-6 lg:border-r lg:border-b-0 border-b border-[#3D3B40] text-white gap-2.5 relative overflow-hidden">
+          <div className="col-span-6 lg:border-r lg:border-b-0 border-b border-[#585858] text-white gap-2.5 relative overflow-hidden">
             <PersonalInfo setRender={setRender} render={render} />
           </div>
         </div>
@@ -108,8 +106,8 @@ function MyBio({ closeBio }) {
       exit={{ x: 50, opacity: 0 }}
     >
       <div className="w-full">
-        <div className="grid grid-cols-12 border-b border-[#3D3B40]">
-          <div className="lg:col-span-2 md:col-span-6 col-span-12  text-white border-r border-[#3D3B40] py-2.5 relative px-4">
+        <div className="grid grid-cols-12 border-b border-[#585858]">
+          <div className="lg:col-span-2 md:col-span-6 col-span-12  text-white border-r border-[#585858] py-2.5 relative px-4">
             <button
               className="absolute top-1/2 -translate-y-1/2 right-4"
               onClick={() => {
@@ -155,10 +153,10 @@ function Skills({ closeSkills }) {
       exit={{ x: 50, opacity: 0 }}
     >
       <div className="w-full">
-        <div className="grid grid-cols-12 border-b border-[#3D3B40]">
-          <div className="lg:col-span-2 md:col-span-6 col-span-12  text-white border-r border-[#3D3B40] py-2.5 relative px-4">
+        <div className="grid grid-cols-12 border-b border-[#585858]">
+          <div className="lg:col-span-2 md:col-span-6 col-span-12  text-white border-r border-[#585858] py-2.5 relative px-4">
             <button
-              className="absolute top-1/2 -translate-y-1/2 right-4"
+              className="absolute top-1/2 -translate-y-1/2 right-4 "
               onClick={() => {
                 closeSkills("/");
               }}
@@ -214,8 +212,8 @@ function Journey({ closeJourney }) {
       exit={{ x: 50, opacity: 0 }}
     >
       <div className="w-full">
-        <div className="grid grid-cols-12 border-b border-[#3D3B40]">
-          <div className="lg:col-span-2 md:col-span-6 col-span-12 text-white border-r border-[#3D3B40] py-2.5 relative px-4">
+        <div className="grid grid-cols-12 border-b border-[#585858]">
+          <div className="lg:col-span-2 md:col-span-6 col-span-12 text-white border-r border-[#585858] py-2.5 relative px-4">
             <button
               className="absolute top-1/2 -translate-y-1/2 right-4"
               onClick={() => {
@@ -306,8 +304,8 @@ function Gear({ closeGear }) {
       exit={{ x: 50, opacity: 0 }}
     >
       <div className="w-full">
-        <div className="grid grid-cols-12 border-b border-[#3D3B40]">
-          <div className="lg:col-span-3 md:col-span-6 col-span-12 text-white border-r border-[#3D3B40] py-2.5 relative px-4">
+        <div className="grid grid-cols-12 border-b border-[#585858]">
+          <div className="lg:col-span-3 md:col-span-6 col-span-12 text-white border-r border-[#585858] py-2.5 relative px-4">
             <button
               className="absolute top-1/2 -translate-y-1/2 right-4"
               onClick={() => closeGear("/")}
@@ -328,111 +326,26 @@ function Gear({ closeGear }) {
   );
 }
 
-function Images({ closeImages }) {
-  return (
-    <motion.div
-      className="col-span-10 h-full flex  justify-center overflow-hidden flex-col"
-      initial={{ x: -50, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: 50, opacity: 0 }}
-    >
-      <div className="w-full">
-        <div className="grid grid-cols-12 border-b border-[#3D3B40]">
-          <div className="lg:col-span-3 md:col-span-6 col-span-12 text-white border-r border-[#3D3B40] py-2.5 relative px-4">
-            <button
-              className="absolute top-1/2 -translate-y-1/2 right-4"
-              onClick={() => closeImages("/")}
-            >
-              <AiOutlineClose />
-            </button>
-            <p>certificate.img</p> 
-          </div>
-        </div>
-      </div>
-      <div className="overflow-y-auto scrollbar-thin scroll-m-0 lg:p-16 md:p-8 p-4">
-        <motion.div className="items-center text-xl text-white/50 underline">
-        <p className="hover:text-white ml-5"><li>Ijazah</li></p>
-        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
-        <motion.img src="../gallery/ijazah.jpg" alt="ijazah" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 8px rgba(255,255,255)", scale:"1.01" }}
-        whileTap={{
-          scale: 1.3}}
-        transition={{ type: 'spring', stiffness:300, damping:10 }} /> 
-        </motion.div>
-        <br /><br />
-        <p className="hover:text-white ml-5"><li>Transkrip Nilai</li></p>
-        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
-        <motion.img src="../gallery/transkrip.jpg" alt="transkrip" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 8px rgba(255,255,255)", scale:"1.01" }}
-        whileTap={{
-          scale: 1.3}}
-        transition={{ type: 'spring', stiffness:300, damping:10 }} /> 
-        </motion.div>
-        <br /><br />
-        <p className="hover:text-white ml-5"><li>English Proficiency Test</li></p>
-        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
-        <motion.img src="../gallery/ept.jpg" alt="ept" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
-        whileTap={{
-          scale: 1.3}}
-        transition={{ type: 'spring', stiffness:300, damping:10 }} /> 
-        </motion.div>
-        <br /><br />
-        <p className="hover:text-white ml-5"><li>IcoLiST 2022</li></p>
-        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
-        <motion.img src="../gallery/icolist.jpg" alt="icolist" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
-        whileTap={{
-          scale: 1.3}}
-        transition={{ type: 'spring', stiffness:300, damping:10 }} /> 
-        </motion.div>
-        <br /><br />
-        <p className="hover:text-white ml-5"><li>RevoU Mini-Course Data Analyst</li></p>
-        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
-        <motion.img src="../gallery/revou.png" alt="revou" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
-        whileTap={{
-          scale: 1.3}}
-        transition={{ type: 'spring', stiffness:300, damping:10 }} /> 
-        </motion.div>
-        <br /><br />
-        <p className="hover:text-white ml-5"><li>MySkill Webinar</li></p>
-        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
-        <motion.img src="../gallery/myskill.png" alt="myskill" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
-        whileTap={{
-          scale: 1.3}}
-        transition={{ type: 'spring', stiffness:300, damping:10 }} /> 
-        </motion.div>
-        <br /><br />
-        <p className="hover:text-white ml-5"><li>Wild Rift RRQ Academy</li></p>
-        <motion.div className="rounded-2xl border border-[#3D3B40] bg-[#001221]/50 flex items-center flex-col hover:shadow-sm hover:shadow-[#607B96] transition-colors w-2/3 ml-10">
-        <motion.img src="../gallery/rrqaca.jpg" alt="rrq" className="rounded-2xl" whileHover={{ boxShadow: "0px 0px 3px rgba(255,255,255)", scale:"1.01" }}
-        whileTap={{
-          scale: 1.3}}
-        transition={{ type: "spring", stiffness:300, damping:10 }} /> 
-        </motion.div>
-        <br /><br />
-        </motion.div>
-      </div>
-    </motion.div>
-  );
-}
-
 function PersonalInfo({ setRender, render }) {
   const [isOpen, setIsOpen] = useState(true);
-  const [isOpenBio, setIsOpenBio] = useState(true);
-  const [isOpenImg, setIsOpenImg] = useState(true);
+  const [isOpenBio] = useState(true);
+  // const [isOpenImg, setIsOpenImg] = useState(true);
 
   function openPopover() {
     setIsOpen(!isOpen);
   }
 
-  function CollapseAll() {
-    setIsOpenBio(false);
-    setIsOpenImg(false);
-  }
+  // function CollapseAll() {
+  //   setIsOpenBio(false);
+  //   setIsOpenImg(false);
+  // }
 
-  function openPopoverBio() {
-    setIsOpenBio(!isOpenBio);
-  }
-  function openPopoverImg() {
-    setIsOpenImg(!isOpenImg);
-  }
+  // function openPopoverBio() {
+  //   setIsOpenBio(!isOpenBio);
+  // }
+  // function openPopoverImg() {
+  //   setIsOpenImg(!isOpenImg);
+  // }
 
   return (
     <Popover>
@@ -441,7 +354,7 @@ function PersonalInfo({ setRender, render }) {
           <Popover.Button
             className={`
                 ${isOpen ? "text-white" : "text-white/50"}
-               flex items-center gap-2.5 border-b border-[#3D3B40] py-2.5 px-4 w-full`}
+               flex items-center gap-2.5 border-b border-[#585858] py-2.5 px-4 w-full`}
             onClick={openPopover}
           >
             <GoTriangleDown
@@ -449,12 +362,12 @@ function PersonalInfo({ setRender, render }) {
             />
             <span className="text-left pr-5 truncate">personal info</span>
           </Popover.Button>
-          <button
+          {/* <button
             onClick={CollapseAll}
             className="absolute top-1/2 -translate-y-1/2 right-2"
           >
             <VscCollapseAll />
-          </button>
+          </button> */}
         </div>
 
         <Transition
@@ -466,11 +379,11 @@ function PersonalInfo({ setRender, render }) {
           leaveFrom="opacity-100 translate-y-0"
           leaveTo="opacity-0 -translate-y-1"
         >
-          <Popover.Panel className=" px-4 text-white py-4">
+          <Popover.Panel className=" text-white py-4">
             <Popover.Group className={`flex flex-col gap-1.5`}>
               <Popover>
                 <>
-                  <Popover.Button
+                  {/* <Popover.Button
                     className={`
                 ${isOpenBio ? "text-white" : "text-white/50"}
                flex items-center gap-2.5  w-full transition-colors`}
@@ -487,7 +400,7 @@ function PersonalInfo({ setRender, render }) {
                       } transition-colors`}
                     />
                     <span className="pr-5 truncate">bio</span>
-                  </Popover.Button>
+                  </Popover.Button> */}
 
                   <Transition
                     show={isOpenBio}
@@ -500,8 +413,8 @@ function PersonalInfo({ setRender, render }) {
                     className="flex flex-col"
                   >
                     <Popover.Panel
-                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${
-                        render === "my-bio" ? "text-white" : "text-[#607B96]"
+                      className={`px-7 py-1 inline-flex items-center gap-2.5 hover:text-white transition-colors ${
+                        render === "my-bio" ? "text-white bg-[#f5f5f5]/20" : "text-[#607B96] hover:bg-[#f5f5f5]/20"
                       }`}
                       as="button"
                       onClick={() => setRender("my-bio")}
@@ -510,8 +423,8 @@ function PersonalInfo({ setRender, render }) {
                       <span className="truncate">personal.py</span>
                     </Popover.Panel>
                     <Popover.Panel
-                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${
-                        render === "journey" ? "text-white" : "text-[#607B96]"
+                      className={`px-7 py-1 inline-flex items-center gap-2.5 hover:text-white transition-colors ${
+                        render === "journey" ? "text-white bg-[#f5f5f5]/20" : "text-[#607B96] hover:bg-[#f5f5f5]/20"
                       }`}
                       as="button"
                       onClick={() => setRender("journey")}
@@ -520,8 +433,8 @@ function PersonalInfo({ setRender, render }) {
                       <span className="truncate">journey.py</span>
                     </Popover.Panel>
                     <Popover.Panel
-                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${
-                        render === "skills" ? "text-white" : "text-[#607B96]"
+                      className={`px-7 py-1 inline-flex items-center gap-2.5 hover:text-white transition-colors ${
+                        render === "skills" ? "text-white bg-[#f5f5f5]/20" : "text-[#607B96] hover:bg-[#f5f5f5]/20"
                       }`}
                       as="button"
                       onClick={() => setRender("skills")}
@@ -530,56 +443,14 @@ function PersonalInfo({ setRender, render }) {
                       <span className="truncate">skills.py</span>
                     </Popover.Panel>
                     <Popover.Panel
-                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${
-                        render === "gear" ? "text-white" : "text-[#607B96]"
+                      className={`px-7 py-1 inline-flex items-center gap-2.5 hover:text-white transition-colors ${
+                        render === "gear" ? "text-white bg-[#f5f5f5]/20" : "text-[#607B96] hover:bg-[#f5f5f5]/20"
                       }`}
                       as="button"
                       onClick={() => setRender("gear")}
                     >
                       <SiMarkdown />
                       <span className="truncate">gear.md</span>
-                    </Popover.Panel>
-                    </Transition>
-
-                    <br />
-                    <Popover.Button
-                    className={`
-                ${isOpenImg ? "text-white" : "text-white/50"}
-               flex items-center gap-2.5  w-full transition-colors`}
-                    onClick={openPopoverImg}
-                  >
-                    <HiChevronRight
-                      className={`${
-                        isOpenImg ? "rotate-90" : ""
-                      } transition-all`}
-                    />
-                    <RiFolder3Fill
-                      className={`${
-                        isOpenImg ? "text-[#E99287]" : "text-[#b36d64]"
-                      } transition-colors`}
-                    />
-                    <span className="pr-5 truncate">gallery</span>
-                  </Popover.Button>
-
-                  <Transition
-                    show={isOpenImg}
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 -translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-linear duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-1"
-                    className="flex flex-col"
-                    >
-                    <Popover.Panel
-                      className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${
-                        render === "images" ? "text-white" : "text-[#607B96]"
-                      }`}
-                      as="button"
-                      onClick={() => setRender("images")}
-                    >
-                      <IoImageSharp />
-                      <span className="truncate">certificate.img</span>
                     </Popover.Panel>
                     </Transition>
                 </>

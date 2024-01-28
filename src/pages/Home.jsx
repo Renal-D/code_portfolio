@@ -45,15 +45,15 @@ export default function Home() {
             <p className="text-white text-lg gap-3">Hewloo all👋. I am</p>
             <AnimatedName />
 
-            <h2 className=" text-[#FF3796] lg:text-3xl md:text-2xl text-xl flex items-center gap-4">
+            <h2 className=" text-[#FD4454] lg:text-3xl md:text-2xl text-xl flex items-center gap-4">
               <span className="animate-pulse">&#62;</span>
               <Typewriter
                 options={{
                   loop: true,
                   wrapperClassName:
-                    " text-[#FF3796] lg:text-3xl md:text-2xl text-xl gap-3",
+                    " text-[#FD4454] lg:text-3xl md:text-2xl text-xl gap-3",
                   cursorClassName:
-                    " text-[#FF3796] lg:text-3xl md:text-2xl text-xl gap-3",
+                    " text-[#FD4454] lg:text-3xl md:text-2xl text-xl gap-3",
                 }}
                 onInit={(typewriter) => {
                   typewriter
@@ -75,7 +75,7 @@ export default function Home() {
           <ul>
             <motion.button
             className="bg-[#1b2b3a] text-white py-2.5 px-3.5 rounded-lg  w-max"
-            whileHover={{ scale: 1.03, boxShadow: "0px 0px 8px rgba(255,255,255)", 
+            whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(255,255,255)", 
             }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
@@ -87,7 +87,8 @@ export default function Home() {
             </p>
             <p>
               {/* <span className="text-[#4D5BCE]">const</span>{" "} */}
-              <span className="text-[#FF3796]">githubLink: str </span>{" "}
+              <span className="text-[#FD4454]">githubLink: </span>{" "}
+              <span className="text-[#43D9AD]">str </span>{" "}
               <span className="text-white">=</span>{" "}
               <a
                 href="https://github.com/renal-d"
