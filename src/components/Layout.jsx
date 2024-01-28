@@ -43,7 +43,7 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
   return (
     <div
       className="h-screen flex bg-[#15010d] items-center justify-center bg-no-repeat bg-cover bg-center"
-      style={{ backgroundImage: `url("https://res.cloudinary.com/dmmbiqyub/image/upload/v1705571195/Screenshot_2023-12-07_181833_wnax5s.png")` }}
+      style={{ backgroundImage: `url("https://res.cloudinary.com/dmmbiqyub/image/upload/v1706405001/bg_jr1iax.webp")` }}
     >
       <div className="custom-size bg-[#23283D]/[70%] backdrop-blur-md rounded-lg border border-[#585858] flex justify-between flex-col overflow-hidden">
         <header className="grid grid-cols-12  text-[#607B96] border-b border-[#585858] items-center">

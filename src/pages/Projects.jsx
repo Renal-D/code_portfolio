@@ -1,7 +1,7 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { HiTerminal } from "@react-icons/all-files/hi/HiTerminal";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
-import { GiArtificialIntelligence } from "@react-icons/all-files/gi/GiArtificialIntelligence";
+import { IoLogoPython } from "@react-icons/all-files/io5/IoLogoPython";
 import { DiPhotoshop } from "@react-icons/all-files/di/DiPhotoshop";
 import { AiOutlineConsoleSql } from "@react-icons/all-files/ai/AiOutlineConsoleSql";
 import { motion } from "framer-motion";
@@ -28,9 +28,9 @@ export default function Projects() {
           />
           <span>projects</span>
         </button>
-        <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#585858] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
+        {/* <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#585858] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
           {filter} projects
-        </div>
+        </div> */}
       </div>
 
       <div className="grid grid-cols-12 h-full">
@@ -59,23 +59,23 @@ export default function Projects() {
             <div className="flex items-center gap-6">
               <button
                 className={`flex items-center px-7 py-1 gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "DataAnalysis" ? "text-white bg-[#f5f5f5]/20" : "text-[#607B96] hover:bg-[#f5f5f5]/20"
+                  filter === "Data-Analysis" ? "text-white bg-[#f5f5f5]/20" : "text-[#607B96] hover:bg-[#f5f5f5]/20"
                 }`}
-                onClick={() => setFilter("DataAnalysis")}
+                onClick={() => setFilter("Data-Analysis")}
               >
                 <AiOutlineConsoleSql />
-                <span>Data Analysis</span> 
+                <span>Data-Analysis</span> 
               </button>
             </div>
             <div className="flex items-center gap-6">
               <button
                 className={`flex items-center px-7 py-1 gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "ML/AI" ? "text-white bg-[#f5f5f5]/20" : "text-[#607B96] hover:bg-[#f5f5f5]/20"
+                  filter === "ML-AI" ? "text-white bg-[#f5f5f5]/20" : "text-[#607B96] hover:bg-[#f5f5f5]/20"
                 }`}
-                onClick={() => setFilter("ML/AI")} 
+                onClick={() => setFilter("ML-AI")} 
               >
-                <GiArtificialIntelligence />
-                <span>ML/AI</span> 
+                <IoLogoPython />
+                <span>ML-AI</span> 
               </button>
             </div>
             <div className="flex items-center gap-6">
@@ -122,14 +122,14 @@ const Card = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   function generateIcon(value) {
-    if (value.includes("DataAnalysis")) {
+    if (value.includes("Data-Analysis")) {
       return <AiOutlineConsoleSql />;
     }
     if (value.includes("Design")) {
       return <DiPhotoshop />;
     }
-    if (value.includes("MachineLearning")) {
-      return <GiArtificialIntelligence />;
+    if (value.includes("ML-AI")) {
+      return <IoLogoPython />;
     }
   }
 

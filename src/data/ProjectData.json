@@ -2,7 +2,7 @@
   {
     "title": "Data Science Project: Games Sales",
     "description": "Mini-Project Revou mencari insight data penjualan game",
-    "technology": "DataAnalysis", 
+    "technology": "Data-Analysis", 
     "visibleProject": "Public",
     "image": "https://res.cloudinary.com/dmmbiqyub/image/upload/v1701610904/aisyah_lohnnl.png",
     "link": "https://colab.research.google.com/drive/1bJs2AgRpDbEht_dkQCHfcDoa13DJsAnS?usp=sharing"
@@ -10,7 +10,7 @@
   {
     "title": "Prediksi juara MPL S13 dan MSC 2024",
     "description": "iseng iseng deh, akhirnya keterusan",
-    "technology": "ML/AI",
+    "technology": "ML-AI",
     "visibleProject": "Public",
     "image": "https://res.cloudinary.com/dmmbiqyub/image/upload/v1701924642/quinnie_se4tbh.webp",
     "link": "https://console.cloud.google.com/bigquery?project=fluent-vortex-370904&ws=!1m5!1m4!4m3!1sfluent-vortex-370904!2sgame_sales!3sgames_clean&pli=1"
@@ -26,7 +26,7 @@
   {
     "title": "Games Sales Excel",
     "description": "haha hihi huhu",
-    "technology": "DataAnalysis",
+    "technology": "Data-Analysis",
     "visibleProject": "Public",
     "image": "https://res.cloudinary.com/dmmbiqyub/image/upload/v1701924642/satine_ynuw4b.webp",
     "link": "https://drive.google.com/file/d/1vqwz_k9hu_Vats0mm1TEuuxF3v4ii3lL/view?usp=sharing"

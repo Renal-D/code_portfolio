@@ -1,6 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { SiNintendogamecube } from "@react-icons/all-files/si/SiNintendogamecube";
-import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
+import { RiArticleLine } from 'react-icons/ri'
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { FaGamepad } from "@react-icons/all-files/fa/FaGamepad";
 import { motion } from "framer-motion";
@@ -27,9 +27,9 @@ export default function Article() {
           />
           <span>article</span>
         </button>
-        <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#585858] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
-          {filter} article
-        </div>
+        {/* <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#585858] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0"> */}
+          {/* {filter} article */}
+        {/* </div> */}
       </div>
 
       <div className="grid grid-cols-12 h-full ">
@@ -51,7 +51,7 @@ export default function Article() {
                 }`}
                 onClick={() => setFilter("all")}
               >
-                <BsFiles />
+                <RiArticleLine />
                 <span>All Article</span>
               </button>
             </div>
@@ -80,7 +80,7 @@ export default function Article() {
           </Transition>
         </div>
 
-        <div className="lg:col-span-10 md:col-span-9 col-span-full flex items-start justify-center lg:p-16 md:p-8 p-4 overflow-y-auto scrollbar-none">
+        <div className="lg:col-span-10 md:col-span-9 col-span-full flex items-start justify-center lg:p-12 md:p-8 p-4 overflow-y-auto scrollbar-none">
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10 h-max w-full">
             {filter === "all" ? (
               datas.map((data, index) => {
